@@ -1,7 +1,7 @@
 # Проект «Pink»
 
 * Студент: [Андрей Киселев](https://htmlacademy.ru/profile/id44824).
-* Наставник: `Unknown`.
+* Наставник: `Андрей Серёдкин`.https://github.com/midler
 
 --
 
