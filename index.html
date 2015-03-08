@@ -10,62 +10,61 @@
 
 <body>
 	<header class="page-header">
-		<div class="page-header__nav-wrapper">
-			<div class="page-header__logo-wrapper">
-				<a href="page-header__logo-link">Pink</a>
+		<div class="g-nav-container"><!--глобальный-->
+			<div class="page-header-logo">
+				<a href="page-header-logo__link">Pink</a>
 			</div>
 			<nav class="main-nav">
 				<ul class="main-nav__list">
-					<li class="main-nav__list-toggle">
-						<div class="main-nav__list-head">Pink</div>
-						<div class="main-nav__toggle main-nav__toggle--close"></div>
-					</li>
+					
 					<li><a href="#">Информация</a></li>
 					<li><a href="#">Возможности</a></li>
 					<li><a href="#">Отзывы</a></li>
 					<li><a href="#">Стоимость</a></li>
-				</ul>			
+				</ul>
+				<a href="#" class="main-nav__toggle main-nav__toggle--close"></a>
 			</nav>
 		</div>
-	</header>
-	<div class="promo-look">
-		<div class="promo-look__slogan">Взгляните на жизнь<br>иначе!</div>
-	</div>
-	<div class="download">
-		<a class="download__button" href="#">Скачать приложение</a>
-	</div>
-	<div class="promo-description">
-		<figure class="promo-description__inner">
-			<img class="promo-description__apple" src="apple.png" alt="Apple">
-			<img class="promo-description__android" src="android.png" alt="Android">
-			<img class="promo-description__windows" src="windows.png" alt="Windows">
-			<figcaption class="promo-description__systems">Доступно для iPhone, iPad, Android,<br>
-		Windows Phone, Mac OS, Windows 8</figcaption>
+		<div class="promo-look">
+			<div class="promo-look__slogan">Взгляните на жизнь<br>иначе!</div><!--bg-picture-->
+			<div class="download">
+				<a class="download__button" href="#">Скачать приложение</a>
+			</div>	
+		</div>	
+		<div class="promo-text">
+		<figure class="promo-text__inner">
+			<img class="promo-text__apple" src="apple.png" alt="Apple">
+			<img class="promo-text__android" src="android.png" alt="Android">
+			<img class="promo-text__windows" src="windows.png" alt="Windows">
+			<figcaption class="promo-text__systems">Доступно для iPhone, iPad, Android,<br>
+		     Windows Phone, Mac OS, Windows 8</figcaption>
 		</figure>		
 	</div>
-	<div class="promo-needs">
-		<p>Устали от серости<br>
-		мегаполиса?</p>
-	</div>
-	<div class="promo-needs">
-		<p>Нам есть, что вам<br>
-	предложить!</p>
+	</header>
+	
+	
+	
+	<div class="promo-offer">
+		<h3>Устали от серости<br>
+		мегаполиса?</h3>
+		<h3>Нам есть, что вам<br>
+	        предложить!</h3>
 	</div>
 	<section class="advantage">
-		<div class="advantage__description-mood">
-			<h3 class="advantage__header">Поднимает настроение</h3>
+		<div class="advantage__description"><!--глобальный-->
+			<h3 class="advantage__title">Поднимает настроение</h3>
 			<p class="advantage__description">Приложение позволит вам победить<br>
 			осеннюю хандру и депрессию<br>
 			буквально в несколько кликов!</p>
-		</div>
-		<div class="advantage__description-change">
-			<h3 class="advantage__header">Меняет мир вокруг</h3>
+		
+		
+			<h3 class="advantage__title">Меняет мир вокруг</h3>
 			<p class="advantage__description">Сделайте снимок и украсьте кго<br>
 			смайликом или текстовой подписью,<br>
 			чтобы усилить эффект</p>
-		</div >
-		<div class="advantage__description-share">
-			<h3 class="advantage__header">Заводит новых друзей</h3>
+		
+		
+			<h3 class="advantage__title">Заводит новых друзей</h3>
 			<p class="advantage__description">Ставьте лайки, комментируйте, делитесь<br>
 			фотографиями с друзьями и заводите<br>
 			новых</p>
@@ -79,37 +78,37 @@
 	<div class="reviews">
 		<div class="reviews__inner">
 			<div class="slider-reviews">
-				<article class="slider-reviews__item">
-					<h3 class="slider-reviews__header">Николай Петров</h3>
-					<div class="slider-reviews__text">&laquo; Это приложение перевернуло мой мир<br>
-					и позволило по-новому взглянуть на<br>
-					привычные серые вещи! А еще я<br>
-					познакомился со своей будущей женой<br>
-					в комментариях к выложенной<br>
-					фотографии!&raquo; </div>
-				</article>
-				<article class="slider-reviews__item">
-					<h3 class="slider-reviews__header">Другой человек</h3>
-					<div class="slider-reviews__text">&laquo; Это приложение перевернуло мой мир<br>
-					и позволило по-новому взглянуть на<br>
-					привычные серые вещи! А еще я<br>
-					познакомился со своей будущей женой<br>
-					в комментариях к выложенной<br>
-					фотографии!&raquo; </div>
-				</article>
-				<article class="slider-reviews__item">
-					<h3 class="slider-reviews__header">Еще другой человек</h3>
-					<div class="slider-reviews__text">&laquo; Это приложение перевернуло мой мир<br>
-					и позволило по-новому взглянуть на<br>
-					привычные серые вещи! А еще я<br>
-					познакомился со своей будущей женой<br>
-					в комментариях к выложенной<br>
-					фотографии!&raquo; </div>
-				</article>
+				<div class="slider-reviews__item">
+					<cite class="slider-reviews__header">Николай Петров</cite>
+					<blockquote class="slider-reviews__text">&laquo; Это приложение перевернуло мой мир
+					и позволило по-новому взглянуть на
+					привычные серые вещи! А еще я
+					познакомился со своей будущей женой
+					в комментариях к выложенной
+					фотографии!&raquo; </blockquote>
+				</div>
+				<div class="slider-reviews__item">
+					<cite class="slider-reviews__header">Другой человек</cite>
+					<blockquote class="slider-reviews__text">&laquo; Это приложение перевернуло мой мир
+					и позволило по-новому взглянуть на
+					привычные серые вещи! А еще я
+					познакомился со своей будущей женой
+					в комментариях к выложенной
+					фотографии!&raquo; </blockquote>
+				</div>
+				<div class="slider-reviews__item">
+					<cite class="slider-reviews__header">Еще другой человек</cite>
+					<blockquote class="slider-reviews__text">&laquo; Это приложение перевернуло мой мир
+					и позволило по-новому взглянуть на
+					привычные серые вещи! А еще я
+					познакомился со своей будущей женой
+					в комментариях к выложенной
+					фотографии!&raquo; </blockquote>
+				</div>
 			</div>	
 		</div>		
 		<div class="slider-reviews__pagination">
-			<i class="slider-reviews__pagination-active"></i>
+			<i class="slider-reviews__pagination--active"></i>
 			<i></i>
 			<i></i>
 		</div>
@@ -118,28 +117,28 @@
 	<div class="prices">
 		<div class="prices__inner">
 			<div class="prices__slider">
-				<div class="prices-slider__item">
-					<div class="prices__header">
-						<img src="http://example.org" alt="Хит">
-						<p class="prices__variant">Стандарт</p>
-						<p class="prices__variant-price">3,99 USD</p>
-					</div>
-					<div class="prices__variant-item">
-						<p class="">Розовый фильтр</p>
-						<img src="http://example.org" alt="Да">
-					</div>
-					<div class="prices__variant-item">
-						<p>Смайлики</p>
-						<img src="http://example.org" alt="Да">
-					</div>
-					<div class="prices__variant-item">
-						<p>Комментарии</p>
-						<img src="http://example.org" alt="Нет">
-						
-					</div>
-				</div>
-				<div class="prices-slider__item"></div>
-				<div class="prices-slider__item"></div>
+				<table class="prices__table">
+					<tr>
+						<td></td>
+						<td>Стандарт<br>3,99 USD</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Розовый фильтр</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Смайлики</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Комментарии</td>
+						<td></td>
+					</tr>
+				</table>
 				<div class="prices__pagination">
 					<i class="prices-slider__pagination-active"></i>
 					<i></i>
@@ -151,12 +150,12 @@
 	
 	<footer class="page-footer">
 		<div class="page-footer__inner">
-			<article class="questions">
+			<div class="questions">
 				<div class="questions__inner">
 					<h3 class="questions__item">Остались вопросы?<br>
 						Свяжитесь с нами!</h3>
 				</div>
-			</article>
+			</div>
 			<div class="page-footer__call">
 				<p class="page-footer__call-header">Звоните:</p>
 				<p class="page-footer__call-text">8 (800) 1000 900</p>
