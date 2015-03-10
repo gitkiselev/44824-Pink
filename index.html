@@ -10,9 +10,9 @@
 
 <body>
 	<header class="page-header">
-		<div class="g-nav-container"><!--глобальный-->
-			<div class="page-header-logo">
-				<a href="page-header-logo__link">Pink</a>
+		<div class="g-container"><!--глобальный-->
+			<div class="page-header__logo">
+				<a href="page-header__logo-link">Pink</a>
 			</div>
 			<nav class="main-nav">
 				<ul class="main-nav__list">
@@ -24,59 +24,63 @@
 				</ul>
 				<a href="#" class="main-nav__toggle main-nav__toggle--close"></a>
 			</nav>
+			
 		</div>
 		<div class="promo-look">
-			<div class="promo-look__slogan">Взгляните на жизнь<br>иначе!</div><!--bg-picture-->
-			<div class="download">
-				<a class="download__button" href="#">Скачать приложение</a>
+			<div class="g-container"><!--сделал еще один блок-->
+				<div class="promo-look__slogan">Взгляните на жизнь<br>иначе!</div><!--bg-picture-->
+				<div class="download">
+					<a class="download__button" href="#">Скачать приложение</a>
+				</div>	
+				<figure class="promo-text">
+					<img class="promo-text__apple" src="apple.png" alt="Apple">
+					<img class="promo-text__android" src="android.png" alt="Android">
+					<img class="promo-text__windows" src="windows.png" alt="Windows">
+					<figcaption class="promo-text__systems">Доступно для iPhone, iPad, Android,<br>
+					 Windows Phone, Mac OS, Windows 8</figcaption>
+				</figure>	
 			</div>	
 		</div>	
-		<div class="promo-text">
-		<figure class="promo-text__inner">
-			<img class="promo-text__apple" src="apple.png" alt="Apple">
-			<img class="promo-text__android" src="android.png" alt="Android">
-			<img class="promo-text__windows" src="windows.png" alt="Windows">
-			<figcaption class="promo-text__systems">Доступно для iPhone, iPad, Android,<br>
-		     Windows Phone, Mac OS, Windows 8</figcaption>
-		</figure>		
-	</div>
+		
 	</header>
 	
 	
 	
 	<div class="promo-offer">
-		<h3>Устали от серости<br>
-		мегаполиса?</h3>
-		<h3>Нам есть, что вам<br>
-	        предложить!</h3>
+		<h1>Устали от серости<br>
+		мегаполиса?</h1>
+		<h1>Нам есть, что вам<br>
+	        предложить!</h1>
 	</div>
-	<section class="advantage">
-		<div class="advantage__description"><!--глобальный-->
-			<h3 class="advantage__title">Поднимает настроение</h3>
-			<p class="advantage__description">Приложение позволит вам победить<br>
-			осеннюю хандру и депрессию<br>
-			буквально в несколько кликов!</p>
-		
-		
-			<h3 class="advantage__title">Меняет мир вокруг</h3>
-			<p class="advantage__description">Сделайте снимок и украсьте кго<br>
-			смайликом или текстовой подписью,<br>
-			чтобы усилить эффект</p>
-		
-		
-			<h3 class="advantage__title">Заводит новых друзей</h3>
-			<p class="advantage__description">Ставьте лайки, комментируйте, делитесь<br>
-			фотографиями с друзьями и заводите<br>
-			новых</p>
+	<div class="advantage">
+		<div class="g-container"><!--глобальный изменил название-->
+			<div class="advantage__item">
+				<h2 class="advantage__title">Поднимает настроение</h2>
+				<p class="advantage__description">Приложение позволит вам победить<br>
+				осеннюю хандру и депрессию<br>
+				буквально в несколько кликов!</p>
+			</div>
+			<div class="advantage__item">
+				<h2 class="advantage__title">Меняет мир вокруг</h2>
+				<p class="advantage__description">Сделайте снимок и украсьте кго<br>
+				смайликом или текстовой подписью,<br>
+				чтобы усилить эффект</p>
+			</div>
+			<div class="advantage__item">
+				<h2 class="advantage__title">Заводит новых друзей</h2>
+				<p class="advantage__description">Ставьте лайки, комментируйте, делитесь<br>
+				фотографиями с друзьями и заводите<br>
+				новых</p>
+			</div>
 		</div>
-	</section>
+	</div>
 	<div class="demo">
-		<div class="demo__inner">
+		<div class="g-container">
 			<img src="http://example.org" alt="">
 		</div>
 	</div>
 	<div class="reviews">
-		<div class="reviews__inner">
+		<div class="g-container">
 			<div class="slider-reviews">
 				<div class="slider-reviews__item">
 					<cite class="slider-reviews__header">Николай Петров</cite>
@@ -105,18 +109,19 @@
 					в комментариях к выложенной
 					фотографии!&raquo; </blockquote>
 				</div>
+				<div class="slider-reviews__pagination">
+					<i class="slider-reviews__pagination__item slider-reviews__pagination__item--active"></i>
+					<i class="slider-reviews__pagination__item"></i>
+					<i class="slider-reviews__pagination__item"></i>
+				</div>
 			</div>	
 		</div>		
-		<div class="slider-reviews__pagination">
-			<i class="slider-reviews__pagination--active"></i>
-			<i></i>
-			<i></i>
-		</div>
+		
 		
 	</div>
 	<div class="prices">
-		<div class="prices__inner">
-			<div class="prices__slider">
+		<div class="g-container">
+			<div class="prices-slider"><!--сделал блоком-->
 				<table class="prices__table">
 					<tr>
 						<td></td>
@@ -139,19 +144,19 @@
 						<td></td>
 					</tr>
 				</table>
-				<div class="prices__pagination">
-					<i class="prices-slider__pagination-active"></i>
-					<i></i>
-					<i></i>
+				<div class="prices-slider__pagination">
+					<i class="prices-slider__pagination__item prices-slider__pagination__item--active"></i>
+					<i class="prices-slider__pagination__item"></i>
+					<i class="prices-slider__pagination__item"></i>
 				</div>
 			</div>	
 		</div>
 	</div>	
 	
 	<footer class="page-footer">
-		<div class="page-footer__inner">
-			<div class="questions">
-				<div class="questions__inner">
+		<div class="g-container">
+			<div class="page-footer__questions">
+				<div class="g-container">
 					<h3 class="questions__item">Остались вопросы?<br>
 						Свяжитесь с нами!</h3>
 				</div>
