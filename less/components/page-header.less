@@ -1,20 +1,34 @@
 .page-header {
-	width: 100%;
+	width: 320px;
 	background-image: url(css/bg-header-full.png) ;
 	
 	&__logo-link {
+		font-family: @font-gr;
 		font-size: @font-size;
+		line-height: 100px;
 		width: 80px;
 		color: @white;
+		text-align: center;
 		border-bottom: @a-border-bottom;
 	
 	}
+	
+//глобальный контейнер
+.g-container {
+	width: 320px;
+	margin: 0 auto;
+	
+}	
+	
 }
 .main-nav__list a {
 	font-family: @font-os;
 	font-size: @open-sans18;
-	padding-top: 24px;
-	padding-bottom: 24px;
+	font-weight: @bold;
+	text-transform: @uppercase;
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 23px;
 	color: @white;
 	border-top: @a-border-top;
 	border-bottom: @a-border-bottom;
@@ -36,4 +50,55 @@
 			height: 22px;
 }
 }
+
+.promo-look {
+	width: 320px;
+	background-color: @dark-blue;
+	
+		&__slogan {
+			font-family: @open-sans24;
+			font-weight: lighter;
+			color: @white;
+			text-align: center;
+			
+		}
+}
+//ссылка "Скачать приложение"
+
+.download__button {
+	font-family: @open-sans18;
+	font-weight: @bold;
+	text-align: center;
+	padding-top: 17px;
+	padding-bottom: 19px;
+    border: 3px solid @white;
+	border-radius: 22px;
+}
+
+.promo-text__apple,
+.promo-text__android,
+.promo-text__windows {
+	display: inline-block;
+}
+.promo-text__systems {
+	font-family: @open-sans14;
+	font-weight: lighter;
+	color: @white;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
