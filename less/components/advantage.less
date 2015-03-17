@@ -1,23 +1,30 @@
 .advantage {
+	text-transform: @advantage-text-transform;
 	font-family: @font-os;
 	width: 320px;
 	margin: 0 auto;
+	background-color: @advantage-bg; //light-gray
 
 	&__title {
-		font-size: 16px; //на угад, в макете нет значений
-		font-weight: bold;
+		font-size: @advantage-title-font-size; //по аналогии с ниже лежащим блоком
+		font-weight: @advantage-title-font-weight;
+		line-height: 30px; //по аналогии с ниже лежащим блоком
 		text-align: center;
+		color: @advantage-title-color;
 
 	}
 
 	&__description {
-		font-size: 12px; //нет значений в макете
-		font-weight: bold;
+		font-size: @advantage-description-font-size;
+		font-weight: @advantage-description-font-weight;
+		text-align: center;
+		color: @advantage-decription-color;
 	}
 
 }
 
 .advantage-item {
-	
+	display: inline-block;
+
 }
 

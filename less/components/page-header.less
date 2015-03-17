@@ -7,40 +7,48 @@
 		font-size: @font-size;
 		line-height: 100px;
 		width: 80px;
-		color: @white;
+		color: @page-header-text-color;
 		text-align: center;
 		border-bottom: @a-border-bottom;
 	
 	}
 	
+
+
+
+
+
 //глобальный контейнер
 .g-container {
 	width: 320px;
 	margin: 0 auto;
 	
+
 }	
 	
+.main-nav {
+	background-color: @main-nav-bg;
 }
+
 .main-nav__list a {
 	font-family: @font-os;
-	font-size: @open-sans18;
-	font-weight: @bold;
-	text-transform: @uppercase;
+	font-size: @main-nav-list-a-font-size;
+	font-weight: @main-nav-list-a-font-weight;
+	text-transform: @main-nav-list-a-text-transform;
 	text-align: center;
 	padding-top: 25px;
 	padding-bottom: 23px;
-	color: @white;
+	color: @page-header-text-color;
 	border-top: @a-border-top;
 	border-bottom: @a-border-bottom;
 	
 	
 		&__list li {
 			line-height: 32px;
-			background-color: @dark-blue;
 			list-style-type: none;
-			
 		}
 }
+
 .main-nav__toggle {
 	background-image: url(css/header-stripes.png);
 	
@@ -51,14 +59,16 @@
 }
 }
 
+
 .promo-look {
 	width: 320px;
-	background-color: @dark-blue;
+	background-color: @page-header-bg;
 	
 		&__slogan {
-			font-family: @open-sans24;
-			font-weight: lighter;
-			color: @white;
+			font-family: @font-os;
+			font-size: @promo-look-slogan-font-size;
+			font-weight: @promo-font-weight;
+			color: @promo-look-slogan-color;
 			text-align: center;
 			
 		}
@@ -66,12 +76,13 @@
 //ссылка "Скачать приложение"
 
 .download__button {
-	font-family: @open-sans18;
-	font-weight: @bold;
+	font-family: @font-os;
+	font-weight: @download-font-weight;
+	font-size: @download-button-font-size;
 	text-align: center;
 	padding-top: 17px;
 	padding-bottom: 19px;
-    border: 3px solid @white;
+    border: 3px solid @download-button-border;
 	border-radius: 22px;
 }
 
@@ -81,9 +92,10 @@
 	display: inline-block;
 }
 .promo-text__systems {
-	font-family: @open-sans14;
-	font-weight: lighter;
-	color: @white;
+	font-family: @font-os;
+	font-size: @promo-text-systems-font-size;
+	font-weight: @promo-text-systems-font-weight;
+	color: @promo-text-systems-color;
 	text-align: center;
 }
 
