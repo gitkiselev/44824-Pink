@@ -1,0 +1,228 @@
+.page-header {
+  width: 320px;
+  /*background-image: url(img/bg-header-full.png) 0 0 no-repeat;*/
+  margin: 0 auto
+  /*&__logo-link {
+		font-family: @font-gr;
+		font-size: @font-size;
+		line-height: 100px;
+		width: 80px;
+		color: @page-header-text-color;
+		text-align: center;
+		border-bottom: @a-border-bottom;
+	}*/
+}
+.page-header__logo {
+  opacity: .5;
+}
+.g-container {
+  width: 320px;
+  margin: 0 auto;
+}
+.main-nav {
+  background-color: #293545;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  display: none;
+}
+.main-nav__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.main-nav__list a {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  color: #ffffff;
+  border-top: 1px solid #495361;
+  border-bottom: 1px solid #000101;
+  display: block;
+  text-decoration: none;
+}
+.main-nav__list a__list li {
+  line-height: 32px;
+  list-style-type: none;
+}
+.main-nav__toggle {
+  background-image: url(css/header-stripes.png);
+}
+.main-nav__toggle--close {
+  background-image: url(css/close-menu-btn.png);
+  width: 23px;
+  height: 22px;
+}
+.promo-look {
+  width: 320px;
+  background-color: #1e2631
+  /*background-image: url(img/bg-header-full.png);*/
+}
+.promo-look__slogan {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 200;
+  color: #ffffff;
+  text-align: center;
+}
+.download__button {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 19px;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border: 3px solid #ffffff;
+  border-radius: 30px;
+  display: block;
+  text-decoration: none;
+  width: 275px;
+  margin: 0 auto;
+}
+.promo-text__img {
+  display: inline-block;
+  margin: 16px;
+}
+.promo-text__systems {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: lighter;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 3px;
+  padding-bottom: 30px;
+  line-height: 24px;
+}
+.promo-offer {
+  width: 320px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+.promo-title {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 200;
+  text-align: center;
+  color: #293545;
+  padding-top: 26px;
+}
+.advantage {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  width: 320px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+}
+.advantage__title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+}
+.advantage__description {
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  color: #293545;
+}
+.advantage-item {
+  display: inline-block;
+}
+.advantage__group {
+  padding-top: 1px;
+}
+.demo {
+  width: 320px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+  padding-bottom: 39px;
+}
+.demo__screen {
+  text-align: center;
+  margin: 0 auto;
+}
+.reviews {
+  background-color: #ffffff;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  width: 320px;
+  margin: 0 auto;
+  text-transform: none;
+  font-style: normal;
+  text-align: center;
+}
+.slider-reviews__header {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+  letter-spacing: 1px;
+}
+.slider-reviews__text {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 30px;
+  text-align: center;
+  color: #293545;
+}
+.slider-reviews__header {
+  font-style: normal;
+  margin: 0 auto;
+}
+.prices {
+  width: 320px;
+  margin: 0 auto;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  background-color: #f2f2f2;
+  text-transform: uppercase;
+}
+.prices__table__head {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+}
+.prices__table__title {
+  font-size: 24px;
+  font-weight: lighter;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+}
+.name-item-content {
+  font-size: 14px;
+  line-height: 30px;
+  color: #293545;
+}
+.page-footer {
+  width: 320px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+}
+.page-footer__questions {
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 1px;
+}
+.questions__item {
+  font-size: 24px;
+  font-weight: lighter;
+  color: #293545;
+}
+.page-footer__item {
+  font-size: 18px;
+  font-weight: bold;
+  color: #293545;
+  text-align: center;
+}
+.page-footer__text {
+  font-size: 24px;
+  font-weight: lighter;
+  color: #d32c55;
+  text-align: center;
+}

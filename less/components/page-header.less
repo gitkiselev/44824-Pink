@@ -1,8 +1,9 @@
 .page-header {
 	width: 320px;
-	background-image: url(css/bg-header-full.png) ;
-	
-	&__logo-link {
+	/*background-image: url(img/bg-header-full.png) 0 0 no-repeat;*/
+	margin: 0 auto;
+
+	/*&__logo-link {
 		font-family: @font-gr;
 		font-size: @font-size;
 		line-height: 100px;
@@ -10,107 +11,98 @@
 		color: @page-header-text-color;
 		text-align: center;
 		border-bottom: @a-border-bottom;
-	
+	}*/
+	&__logo {
+		opacity: .5;
 	}
-	
-
-
-
+}
 
 
 //глобальный контейнер
 .g-container {
 	width: 320px;
 	margin: 0 auto;
-	
-
-}	
-	
+}
 .main-nav {
 	background-color: @main-nav-bg;
+	font-family: @font-main;
+	display: none; //не забыть поставить в none;
 }
 
+.main-nav__list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
 .main-nav__list a {
-	font-family: @font-os;
+	font-family: @font-main;
 	font-size: @main-nav-list-a-font-size;
 	font-weight: @main-nav-list-a-font-weight;
 	text-transform: @main-nav-list-a-text-transform;
 	text-align: center;
-	padding-top: 25px;
-	padding-bottom: 23px;
+	padding-top: 21px;
+	padding-bottom: 21px;
 	color: @page-header-text-color;
 	border-top: @a-border-top;
 	border-bottom: @a-border-bottom;
-	
-	
-		&__list li {
-			line-height: 32px;
-			list-style-type: none;
-		}
-}
+	display: block;
+	text-decoration: none;
 
+	&__list li {
+		line-height: 32px;
+		list-style-type: none;
+	}
+}
 .main-nav__toggle {
 	background-image: url(css/header-stripes.png);
-	
-		&--close {
-			background-image: url(css/close-menu-btn.png);
-			width: 23px;
-			height: 22px;
-}
-}
 
-
+	&--close {
+		background-image: url(css/close-menu-btn.png);
+		width: 23px;
+		height: 22px;
+	}
+}
 .promo-look {
 	width: 320px;
-	background-color: @page-header-bg;
-	
-		&__slogan {
-			font-family: @font-os;
-			font-size: @promo-look-slogan-font-size;
-			font-weight: @promo-font-weight;
-			color: @promo-look-slogan-color;
-			text-align: center;
-			
-		}
+	background-color: @page-header-bg;//потом убрать
+	/*background-image: url(img/bg-header-full.png);*/
+
+	&__slogan {
+		font-family: @font-main;
+		font-size: @promo-look-slogan-font-size;
+		font-weight: @promo-font-weight;
+		color: @promo-look-slogan-color;
+		text-align: center;
+	}
 }
 //ссылка "Скачать приложение"
 
 .download__button {
-	font-family: @font-os;
+	font-family: @font-main;
 	font-weight: @download-font-weight;
 	font-size: @download-button-font-size;
+	color: @a-color;
 	text-align: center;
-	padding-top: 17px;
-	padding-bottom: 19px;
-    border: 3px solid @download-button-border;
-	border-radius: 22px;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	border: 3px solid @download-button-border;
+	border-radius: 30px;
+	display: block;
+	text-decoration: none;
+	width: 275px;
+	margin: 0 auto;
 }
-
-.promo-text__apple,
-.promo-text__android,
-.promo-text__windows {
+.promo-text__img {
 	display: inline-block;
+	margin: 16px;
 }
 .promo-text__systems {
-	font-family: @font-os;
+	font-family: @font-main;
 	font-size: @promo-text-systems-font-size;
 	font-weight: @promo-text-systems-font-weight;
 	color: @promo-text-systems-color;
 	text-align: center;
+	padding-top: 3px;
+	padding-bottom: 30px;
+	line-height: 24px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

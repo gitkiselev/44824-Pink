@@ -9,10 +9,11 @@
 </head>
 
 <body>
+
 	<header class="page-header">
 		<div class="g-container"><!--глобальный-->
 			<div class="page-header__logo">
-				<a href="page-header__logo-link">Pink</a>
+				<a href="index.html"><img src="img/Pink-logo-1.png" alt="logo"></a>
 			</div>
 			<nav class="main-nav">
 				<ul class="main-nav__list">
@@ -33,9 +34,9 @@
 					<a class="download__button" href="#">Скачать приложение</a>
 				</div>	
 				<figure class="promo-text">
-					<img class="promo-text__apple" src="css/apple.png" alt="Apple">
-					<img class="promo-text__android" src="css/android.png" alt="Android">
-					<img class="promo-text__windows" src="css/windows.png" alt="Windows">
+					<img class="promo-text__img" src="img/apple-logo.svg" alt="Apple">
+					<img class="promo-text__img" src="img/android-logo.svg" alt="Android">
+					<img class="promo-text__img" src="img/microsoft-logo.svg" alt="Microsoft">
 					<figcaption class="promo-text__systems">Доступно для iPhone, iPad, Android,<br>
 					 Windows Phone, Mac OS, Windows 8</figcaption>
 				</figure>	
@@ -56,30 +57,32 @@
 	</div>
 	<div class="advantage">
 		<div class="g-container"><!--глобальный изменил название-->
-			<div class="advantage__item">
-				<h2 class="advantage__title">Поднимает настроение</h2>
-				<p class="advantage__description">Приложение позволит вам победить<br>
-				осеннюю хандру и депрессию<br>
-				буквально в несколько кликов!</p>
-			</div>
-			<div class="advantage__item">
-				<h2 class="advantage__title">Меняет мир вокруг</h2>
-				<p class="advantage__description">Сделайте снимок и украсьте кго<br>
-				смайликом или текстовой подписью,<br>
-				чтобы усилить эффект</p>
-			</div>
-			<div class="advantage__item">
-				<h2 class="advantage__title">Заводит новых друзей</h2>
-				<p class="advantage__description">Ставьте лайки, комментируйте, делитесь<br>
-				фотографиями с друзьями и заводите<br>
-				новых</p>
+			<div class="advantage__group">
+				<div class="advantage__item">
+					<h2 class="advantage__title">Поднимает настроение</h2>
+					<p class="advantage__description">Приложение позволит вам победить<br>
+					осеннюю хандру и депрессию<br>
+					буквально в несколько кликов!</p>
+				</div>
+				<div class="advantage__item">
+					<h2 class="advantage__title">Меняет мир вокруг</h2>
+					<p class="advantage__description">Сделайте снимок и украсьте его<br>
+					смайликом или текстовой подписью,<br>
+					чтобы усилить эффект</p>
+				</div>
+				<div class="advantage__item">
+					<h2 class="advantage__title">Заводит новых друзей</h2>
+					<p class="advantage__description">Ставьте лайки, комментируйте, делитесь<br>
+					фотографиями с друзьями и заводите<br>
+					новых</p>
+				</div>
 			</div>
 		</div>
 	</div>
 	<div class="demo">
 		<div class="g-container">
 			<div class="demo__screen">
-				<img src="http://example.org" alt="">
+				<img src="img/screen-1-3.png" alt="">
 			</div>
 		</div>	
 	</div>
@@ -87,31 +90,31 @@
 		<div class="g-container">
 			<div class="slider-reviews">
 				<div class="slider-reviews__item">
-					<cite class="slider-reviews__header">Николай Петров</cite>
-					<blockquote class="slider-reviews__text">&laquo; Это приложение перевернуло мой мир
+					<p><cite class="slider-reviews__header">Николай Петров</cite></p>
+					<blockquote class="slider-reviews__text"><p>&laquo;Это приложение перевернуло мой мир
 					и позволило по-новому взглянуть на
 					привычные серые вещи! А еще я
 					познакомился со своей будущей женой
 					в комментариях к выложенной
-					фотографии!&raquo; </blockquote>
+					фотографии!&raquo; </p></blockquote>
 				</div>
 				<div class="slider-reviews__item">
-					<cite class="slider-reviews__header">Другой человек</cite>
-					<blockquote class="slider-reviews__text">&laquo; Это приложение перевернуло мой мир
+					<p><cite class="slider-reviews__header">Николай Иванов</cite></p>
+					<blockquote class="slider-reviews__text"><p>&laquo;Это приложение перевернуло мой мир
 					и позволило по-новому взглянуть на
 					привычные серые вещи! А еще я
 					познакомился со своей будущей женой
 					в комментариях к выложенной
-					фотографии!&raquo; </blockquote>
+					фотографии!&raquo; </p></blockquote>
 				</div>
 				<div class="slider-reviews__item">
-					<cite class="slider-reviews__header">Еще другой человек</cite>
-					<blockquote class="slider-reviews__text">&laquo; Это приложение перевернуло мой мир
+					<p><cite class="slider-reviews__header">Николай Светлов</cite></p>
+					<blockquote class="slider-reviews__text"><p>&laquo;Это приложение перевернуло мой мир
 					и позволило по-новому взглянуть на
 					привычные серые вещи! А еще я
 					познакомился со своей будущей женой
 					в комментариях к выложенной
-					фотографии!&raquo; </blockquote>
+					фотографии!&raquo; </p></blockquote>
 				</div>
 				<div class="slider-pagination">
 					<i class="slider-pagination__item slider-pagination__item--active"></i>
@@ -127,11 +130,11 @@
 		<div class="g-container">
 			<div class="prices-slider"><!--сделал блоком-->
 				<table class="prices__table">
-					<tr>
-						<td><h2 class="name-item">База</h2><div class="prices-value">1,99 USD</div>div></td>
-						<td><h2 class="name-item">Стандарт</h2><div class="prices-value">3,99 USD</div>div></td>
-						<td><h2 class="name-item">Анлим</h2><div class="prices-value">9,99 USD</div>div></td>
-					</tr>
+					<thead>
+						<td><h2 class="prices__table__head">База</h2><div class="prices__table__title">1,99 USD</div></td>
+						<td><h2 class="prices__table__head">Стандарт</h2><div class="prices__table__title">3,99 USD</div></td>
+						<td><h2 class="prices__table__head">Анлим</h2><div class="prices__table__title">9,99 USD</div></td>
+					</thead>
 					<tr class="name-item-content">
 						<td>Розовый фильтр</td>
 						<td>Розовый фильтр</td>
@@ -165,17 +168,17 @@
 						Свяжитесь с нами!</h3>
 				</div>
 			</div>
-			<div class="page-footer__call">
-				<p class="page-footer__call-header">Звоните:</p>
-				<p class="page-footer__call-text">8 (800) 1000 900</p>
+			<div class="page-footer__item">
+				<p class="page-footer__title">Звоните:</p>
+				<p class="page-footer__text">8 (800) 1000 900</p>
 			</div>
-			<div class="page-footer__write">
-				<p class="page-footer__write-header">Пишите:</p>
-				<p class="page-footer__write-text">hello@pinkapp.ru</p>
+			<div class="page-footer__item">
+				<p class="page-footer__title">Пишите:</p>
+				<p class="page-footer__text">hello@pinkapp.ru</p>
 			</div>
-			<div class="page-footer__come">
-				<p class="page-footer__come-header">Приезжайте в гости:</p>
-				<p class="page-footer__come-text">Санкт-Петербург,<br>
+			<div class="page-footer__item">
+				<p class="page-footer__title">Приезжайте в гости:</p>
+				<p class="page-footer__text">Санкт-Петербург,<br>
 				Невский проспект, д. 20</p>
 			</div>
 		</div>
