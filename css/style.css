@@ -1,16 +1,180 @@
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  font-size: 1.4rem;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  background-color: transparent;
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  color: #D32C55;
+}
+a:active {
+  opacity: 0.3;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+b,
+strong {
+  font-weight: 700;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  margin: .67em 0;
+  font-size: 1.7em;
+  color: #293545;
+}
+h2,
+h3 {
+  font-size: 1.2em;
+  color: #000;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+sub,
+sup {
+  position: relative;
+  vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  color: inherit;
+  font: inherit;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+input[type=checkbox],
+input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type=search] {
+  box-sizing: content-box;
+}
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+legend {
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: 700;
+}
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+td,
+th {
+  padding: 0;
+}
+/*body{
+	min-width:450px;
+}*/
+@-ms-viewport {
+  width: device-width;
+}
+@viewport {
+  width: device-width;
+}
 .page-header {
   width: 320px;
-  /*background-image: url(img/bg-header-full.png) 0 0 no-repeat;*/
-  margin: 0 auto
-  /*&__logo-link {
-		font-family: @font-gr;
-		font-size: @font-size;
-		line-height: 100px;
-		width: 80px;
-		color: @page-header-text-color;
-		text-align: center;
-		border-bottom: @a-border-bottom;
-	}*/
+  margin: 0 auto;
 }
 .page-header__logo {
   opacity: .5;
@@ -18,6 +182,15 @@
 .g-container {
   width: 320px;
   margin: 0 auto;
+}
+.page-header__background {
+  background-image: url(img/iphone-hand-1.png), url(img/background-1@1x.jpg);
+  /*background-repeat: no-repeat, no-repeat;
+	background-position:center 90px, top center;
+	min-height: 300px;
+	background-size:auto, cover;*/
+  text-align: center;
+  min-height: 300px;
 }
 .main-nav {
   background-color: #293545;
@@ -48,17 +221,17 @@
   list-style-type: none;
 }
 .main-nav__toggle {
-  background-image: url(css/header-stripes.png);
+  background-image: url(img/header-stripes.png);
 }
 .main-nav__toggle--close {
-  background-image: url(css/close-menu-btn.png);
+  background-image: url(img/close-menu-btn.png);
   width: 23px;
   height: 22px;
 }
 .promo-look {
+  display: block;
   width: 320px;
-  background-color: #1e2631
-  /*background-image: url(img/bg-header-full.png);*/
+  background-color: #1e2631;
 }
 .promo-look__slogan {
   font-family: 'Open Sans', Helvetica, sans-serif;
@@ -66,6 +239,7 @@
   font-weight: 200;
   color: #ffffff;
   text-align: center;
+  margin-bottom: 340px;
 }
 .download__button {
   font-family: 'Open Sans', Helvetica, sans-serif;
@@ -81,10 +255,11 @@
   text-decoration: none;
   width: 275px;
   margin: 0 auto;
+  margin-top: 1px;
 }
 .promo-text__img {
   display: inline-block;
-  margin: 16px;
+  margin: 15px;
 }
 .promo-text__systems {
   font-family: 'Open Sans', Helvetica, sans-serif;
@@ -225,4 +400,7 @@
   font-weight: lighter;
   color: #d32c55;
   text-align: center;
+}
+.map {
+  background-image: url(img/footer-map.png);
 }
