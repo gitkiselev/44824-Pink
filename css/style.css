@@ -179,18 +179,39 @@ th {
 .page-header__logo {
   opacity: .5;
 }
+.page-header__main-nav {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: relative;
+  height: 60px;
+}
+.page-header__logo {
+  position: relative;
+  top: 16px;
+  left: 20px;
+  width: 74px;
+  height: 24px;
+  z-index: 10;
+}
+.page-header__open {
+  position: relative;
+  top: -8px;
+  left: 250px;
+  width: 50px;
+  height: 24px;
+  z-index: 10;
+}
+.page-header__background {
+  position: relative;
+  top: 1px;
+  background-image: url(../img/iphone-hand-1.png), url(../img/background-1@1x.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0px 167px, -363px -38px;
+  min-height: 300px;
+  background-size: auto, cover;
+}
 .g-container {
   width: 320px;
   margin: 0 auto;
-}
-.page-header__background {
-  background-image: url(img/iphone-hand-1.png), url(img/background-1@1x.jpg);
-  /*background-repeat: no-repeat, no-repeat;
-	background-position:center 90px, top center;
-	min-height: 300px;
-	background-size:auto, cover;*/
-  text-align: center;
-  min-height: 300px;
 }
 .main-nav {
   background-color: #293545;
@@ -230,8 +251,8 @@ th {
 }
 .promo-look {
   display: block;
-  width: 320px;
-  background-color: #1e2631;
+  width: 320px
+  /*background-color: @page-header-bg;//потом убрать*/
 }
 .promo-look__slogan {
   font-family: 'Open Sans', Helvetica, sans-serif;
@@ -239,9 +260,15 @@ th {
   font-weight: 200;
   color: #ffffff;
   text-align: center;
-  margin-bottom: 340px;
+  position: relative;
+  bottom: 314px;
+  margin-top: 337px;
+}
+.promo-look__background {
+  background-color: #1e2631;
 }
 .download__button {
+  background-color: #1e2631;
   font-family: 'Open Sans', Helvetica, sans-serif;
   font-weight: bold;
   font-size: 19px;
@@ -255,7 +282,8 @@ th {
   text-decoration: none;
   width: 275px;
   margin: 0 auto;
-  margin-top: 1px;
+  position: relative;
+  top: 29px;
 }
 .promo-text__img {
   display: inline-block;
@@ -270,6 +298,13 @@ th {
   padding-top: 3px;
   padding-bottom: 30px;
   line-height: 24px;
+}
+.promo-text {
+  position: relative;
+  margin-top: 43px;
+  top: 0px;
+  left: 3px;
+  background-color: #1e2631;
 }
 .promo-offer {
   width: 320px;
