@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Pink</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css"> 
   <link rel="stylesheet" href="css/style.css"> 
 </head>
@@ -16,7 +17,7 @@
 		<div class="page-header__background">
 		<div class="page-header__main-nav">
 			<div class="page-header__logo">
-				<a href="index.html"><img src="img/pink-logo-2.png" alt="logo"></a>
+				<a href="index.html"><picture><img src="img/pink-logo-2.png" srcset="img/pink-logo-2.png 320w, img/Pink-logo-2@1x.png 768w" alt="logo"></picture></a>
 			</div>
 			<div class="page-header__open">
 				<a href="#"><img src="img/header-stripes.png" alt=""></a>
@@ -24,13 +25,17 @@
 		</div>
 			<nav class="main-nav">
 				<ul class="main-nav__list">
-					
+					<li>
+						<div class="main-nav__toggle">
+						<a class="main-nav__logo"href="#"><img src="img/pink-logo-2.png"></a>
+						<a class="main-nav__close"href="#"><img src="img/close-menu-btn.png"></a>					
+					</div>
+					</li>
 					<li><a href="#">Информация</a></li>
 					<li><a href="#">Возможности</a></li>
 					<li><a href="#">Отзывы</a></li>
 					<li><a href="#">Стоимость</a></li>
 				</ul>
-				<a href="#" class="main-nav__toggle main-nav__toggle--close"></a>
 			</nav>
 			
 		
@@ -58,10 +63,10 @@
 	
 	<div class="promo-offer">
 		<div class="g-container">
-			<h1 class="promo-title">Устали от серости<br>
-			мегаполиса?<br>
-			Нам есть, что вам<br>
-		    предложить!</h1>
+			<h1 class="promo-title">Устали от серости
+				мегаполиса?</br><br>
+			Нам есть, что вам
+				предложить!</h1>
 		</div>	
 	</div>
 	<div class="advantage">
@@ -190,7 +195,9 @@
 				<p class="page-footer__text">Санкт-Петербург,<br>
 				Невский проспект, д. 20</p>
 			</div>
-			<div class="map"></div>
+			<div class="map">
+				
+			</div>
 		</div>
 	</footer>
 	

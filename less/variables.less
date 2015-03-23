@@ -5,6 +5,8 @@
 @download-button-border: #fff;
 @download-button-font-size: 22px;
 @download-font-weight: bold;
+@bold: @download-font-weight;
+/*@download-font-weight: @bold;*/
 @promo-text-systems-color: #fff;
 @main-nav-bg: #293545;
 @page-header-text-color: #FFFFFF; 
@@ -14,6 +16,7 @@
 @main-nav-list-a-text-transform: uppercase;
 @a-color: #fff;
 @promo-look-slogan-font-size: 24px;
+@promo-look-slogan-font-size-tab: 40px;
 @download-button-font-size: 19px;
 @promo-text-systems-font-size: 14px;
 @promo-text-systems-font-weight: lighter;
@@ -29,6 +32,7 @@
 @a-border-top: 1px solid #495361; //серо-темно-синий
 @a-border-bottom: 1px solid #000101; //черный
 @download-font-weight: bold;
+@download-font-weight: @bold;//!!!!
 
 //promo-offer
 
@@ -45,10 +49,13 @@
 @advantage-bg: #F2F2F2;
 @advantage-text-transform: none; //не нужно
 @advantage-title-font-size: 18px;
-@advantage-title-font-weight: bold;
+@advantage-title-font-weight: @bold;
+@bold: bold;
 
 @advantage-description-font-size: 14px;
+@normal: normal;
 @advantage-description-font-weight: normal;
+@normal: normal;
 @advantage-title-color: #000;
 @advantage-decription-color: #293545;
 
@@ -84,7 +91,8 @@
 @prices-table-head-color: #fff;
 
 @prices-value-font-size: 24px; //исправить!!!
-@prices-value-font-weight: lighter;
+@lighter: lighter;
+@prices-value-font-weight: @lighter;
 @prices-value-line-height: 30px;
 @prices-value-color: #fff;
 
@@ -105,12 +113,17 @@
 
 @questions-item-font-size: 24px;
 @questions-item-font-weight: lighter;
+@questions-item-font-weight: @lighter;
 @questions-item-color: #293545; //not black!
 
 @page-footer-title-font-size: 18px;
+@footer-font-size: 18px;
+@page-footer-title-font-size: @footer-font-size;
 @page-footer-title-font-weight: bold;
+@page-footer-title-font-weight: @bold;
 @page-footer-title-color: #293545;
 
 @page-footer-text-font-size: 24px;
 @page-footer-text-font-weight: lighter;
+@page-footer-text-font-weight: @lighter;
 @page-footer-text-color: #d32c55;
