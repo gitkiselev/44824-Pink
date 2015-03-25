@@ -4,67 +4,83 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Pink</title>
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/normalize.css"> 
   <link rel="stylesheet" href="css/style.css"> 
 </head>
 
 <body>
 
-	<header class="page-header">
-	
-		<div class="g-container"><!--глобальный-->
-		<div class="page-header__background">
-		<div class="page-header__main-nav">
-			<div class="page-header__logo">
-				<a href="index.html"><picture><img src="img/pink-logo-2.png" srcset="img/pink-logo-2.png 320w, img/Pink-logo-2@1x.png 768w" alt="logo"></picture></a>
-			</div>
-			<div class="page-header__open">
-				<a href="#"><img src="img/header-stripes.png" alt=""></a>
-			</div>
-		</div>
-			<nav class="main-nav">
-				<ul class="main-nav__list">
-					<li>
-						<div class="main-nav__toggle">
-						<a class="main-nav__logo"href="#"><img src="img/pink-logo-2.png"></a>
-						<a class="main-nav__close"href="#"><img src="img/close-menu-btn.png"></a>					
+<header class="page-header">
+
+		<div class="g-container">
+			<div class="page-header__background">
+				<div class="js">
+					<div class="page-header__main-nav">
+
+						<a class="page-header__logo" href="index.html">
+							<img class="logo-svg" src="img/logo-1.svg" <style> "fill: #fff"</style></a>
+
+						<a class="page-header__open" href="#">
+							<img src="img/menu-burger.svg" alt="open"></a>
+
 					</div>
-					</li>
-					<li><a href="#">Информация</a></li>
-					<li><a href="#">Возможности</a></li>
-					<li><a href="#">Отзывы</a></li>
-					<li><a href="#">Стоимость</a></li>
-				</ul>
-			</nav>
-			
-		
-			<div class="promo-look">
-			
-				<div class="promo-look__slogan">Взгляните на жизнь<br>иначе!</div><!--bg-picture-->
-				<div class="promo-look__background">
-				<div class="download">
-					<a class="download__button" href="#">Скачать приложение</a>
-				</div>	
-				<figure class="promo-text">
-					<img class="promo-text__img" src="img/apple-logo.svg" alt="Apple">
-					<img class="promo-text__img" src="img/android-logo.svg" alt="Android">
-					<img class="promo-text__img" src="img/microsoft-logo.svg" alt="Microsoft">
-					<figcaption class="promo-text__systems">Доступно для iPhone, iPad, Android,<br>
-					 Windows Phone, Mac OS, Windows 8</figcaption>
-				</figure>	
+					<nav class="main-nav">
+						<ul class="main-nav__list">
+							<li class="main-nav__item">
+								
+								<a class="main-nav__logo" href="#">
+									<img class="logo-svg" src="img/logo-1.svg" alt=""></a>
+								<a class="main-nav__close" href="#">
+									<img class="logo-cross" src="img/menu-cross.svg" alt=""></a>
+								</li>
+							<li class="main-nav__item">
+								<a href="#">Информация</a>
+							</li>
+							<li class="main-nav__item">
+								<a href="#">Возможности</a>
+							</li>
+							<li class="main-nav__item">
+								<a href="#">Отзывы</a>
+							</li>
+							<li class="main-nav__item">
+								<a href="#">Стоимость</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="promo-look">
+
+					<div class="promo-look__slogan">
+						Взгляните на жизнь
+						<br>иначе!</div>
+					<div class="promo-wrapper">
+						<div class="download">
+							<a class="download__button" href="#">Скачать приложение</a>
+						</div>
+						<figure class="promo-text">
+							<img class="promo-text__img" src="img/apple-logo.svg" alt="Apple">
+							<img class="promo-text__img" src="img/android-logo.svg" alt="Android">
+							<img class="promo-text__img" src="img/microsoft-logo.svg" alt="Microsoft">
+							<figcaption class="promo-text__systems">
+								Доступно для iPhone, iPad, Android,
+								<br>Windows Phone, Mac OS, Windows 8</figcaption>
+						</figure>
+					</div>
+				</div>
 			</div>
-			</div>	
 		</div>
-	</div>
 	</header>
+
+	
 	
 	
 	
 	<div class="promo-offer">
 		<div class="g-container">
 			<h1 class="promo-title">Устали от серости
-				мегаполиса?</br><br>
+				мегаполиса?<br><br>
 			Нам есть, что вам
 				предложить!</h1>
 		</div>	
@@ -90,8 +106,16 @@
 					фотографиями с друзьями и заводите<br>
 					новых</p>
 				</div>
+				
 			</div>
 		</div>
+		<div class="effect">
+					<div class="effect__container">
+						<div class="effect__picture">
+							24
+						</div>
+					</div>
+	</div>
 	</div>
 	<div class="demo">
 		<div class="g-container">
@@ -100,6 +124,7 @@
 			</div>
 		</div>	
 	</div>
+	
 	<div class="reviews">
 		<div class="g-container">
 			<div class="slider-reviews">

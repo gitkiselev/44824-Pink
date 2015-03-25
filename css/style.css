@@ -177,104 +177,107 @@ th {
   width: 320px;
   margin: 0 auto;
 }
-.page-header__main-nav {
-  background-color: rgba(0, 0, 0, 0.3);
-  /*position: relative;*/
-  height: 66px
-  /*visibility: hidden;/////////////*/
-}
-.page-header__logo {
-  position: relative;
-  top: 22px;
-  left: 20px;
-  width: 74px;
-  height: 24px;
-  z-index: 10;
-}
-.page-header__open {
-  position: relative;
-  top: -3px;
-  left: 250px;
-  width: 50px;
-  height: 24px;
-  z-index: 10;
-}
-.page-header__background {
-  position: relative;
-  top: 1px;
-  background-image: url(../img/iphone-hand-1.png), url(../img/background-1@1x.jpg);
-  background-repeat: no-repeat, no-repeat;
-  background-position: 0px 172px, -363px -38px;
-  /*min-height: 300px;*/
-  background-size: auto, cover;
-}
 .g-container {
   width: 320px;
   margin: 0 auto;
 }
+/* -- Шапка нераскрытого меню -- */
+.page-header__main-nav {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 66px;
+}
+/*Логотип*/
+.page-header__logo {
+  margin-top: 23px;
+  margin-left: 21px;
+  display: inline-block;
+}
+/*menu-burger*/
+.page-header__open {
+  padding-top: 0px;
+  padding-left: 150px;
+  margin-top: 1px;
+  display: inline-block;
+}
+.page-header__background {
+  background-image: url(../img/iphone-hand-1.png), url(../img/background-1@1x.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0px 172px, -368px -37px;
+  background-size: auto, cover;
+  position: relative
+  /*для привязки точки отсчета
+                      для выпадающего меню*/
+}
 .main-nav {
+  position: absolute;
+  top: -3px;
   background-color: #293545;
   font-family: 'Open Sans', Helvetica, sans-serif;
-  display: none;
-  position: absolute;
-  z-index: 2;
-  top: 0px;
-  left: 1px;
+  display: block
+  /*block or none!!!!*/
 }
+/*Выпадающее меню*/
 .main-nav__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-.main-nav__list a {
+.main-nav__item {
+  width: 320px;
+}
+.main-nav__item a {
   font-family: 'Open Sans', Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
-  padding: 0 68px;
-  width: 183px;
+  width: 320px;
   padding-top: 21px;
   padding-bottom: 21px;
   color: #ffffff;
-  /*border-top: @a-border-top;
-	border-bottom: @a-border-bottom;*/
-  display: block;
+  display: inline-block;
   text-decoration: none;
 }
-.main-nav__list li {
+.main-nav__logo,
+.main-nav__close {
+  padding: 0px 0px;
+  margin: 0;
+  text-decoration: none;
+  display: inline-block;
+}
+.main-nav__item > .main-nav__logo {
+  width: 74px;
+  margin-top: 2px;
+  margin-left: 20px;
+}
+.main-nav__item > .main-nav__close {
+  width: 23px;
+  margin-top: 2px;
+  margin-left: 177px;
+}
+.logo-svg {
+  width: 74px;
+  display: inline-block;
+}
+.logo-cross {
+  width: 23px;
+  display: inline-block;
+}
+.main-nav__item {
   line-height: 20px;
   list-style-type: none;
   border-top: 1px solid #495361;
   border-bottom: 1px solid #000101;
 }
-.main-nav__logo,
-.main-nav__close {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  display: inline-block;
-  position: absolute;
-}
-.main-nav__toggle {
-  height: 68px;
-}
-.main-nav__logo {
-  position: relative;
-  top: 0px;
-  left: -103px;
-  width: 100px;
-}
-.main-nav__close {
-  position: relative;
-  top: -69px;
-  left: 129px;
-  width: 100px;
-}
+/*Взгляните на жизнь иначе*/
 .promo-look {
-  display: block;
-  width: 320px
-  /*background-color: @page-header-bg;//потом убрать*/
+  display: inline-block;
+  width: 320px;
+}
+.promo-wrapper {
+  background-color: #1e2631;
+  margin-top: 336px;
+  padding-top: 1px;
 }
 .promo-look__slogan {
   font-family: 'Open Sans', Helvetica, sans-serif;
@@ -282,35 +285,41 @@ th {
   font-weight: 200;
   color: #ffffff;
   text-align: center;
-  position: relative;
-  bottom: 316px;
-  margin-top: 337px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-top: 1px;
 }
-.promo-look__background {
+.download,
+.promo-text {
   background-color: #1e2631;
+}
+.download {
+  margin-top: 26px;
 }
 .download__button {
   background-color: #1e2631;
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: font-main;
   font-weight: bold;
   font-size: 19px;
   color: #ffffff;
   text-align: center;
+  display: block;
+  border-top: 1px;
   padding-top: 13px;
   padding-bottom: 13px;
   border: 3px solid #ffffff;
   border-radius: 30px;
-  display: block;
   text-decoration: none;
   width: 275px;
   margin: 0 auto;
-  margin-top: -1px;
-  position: relative;
-  top: 28px;
 }
+/*--Иконки операционных систем --*/
 .promo-text__img {
   display: inline-block;
   margin: 15px;
+}
+.promo-text {
+  margin-top: 15px;
 }
 .promo-text__systems {
   font-family: 'Open Sans', Helvetica, sans-serif;
@@ -319,123 +328,11 @@ th {
   color: #ffffff;
   text-align: center;
   padding-top: 3px;
-  padding-bottom: 24px;
+  padding-bottom: 30px;
   line-height: 24px;
 }
 .promo-text {
-  position: relative;
-  margin-top: 50px;
-  top: -5px;
-  left: 3px;
   background-color: #1e2631;
-}
-/*---------- Планшетная версия ----------*/
-@media (min-width: 768px) {
-  .page-header {
-    width: 700px;
-    margin: 0 auto;
-  }
-  .g-container {
-    width: 700px;
-    margin: 0 auto;
-  }
-  .page-header__main-nav {
-    background-color: rgba(0, 0, 0, 0.3);
-    height: 110px;
-  }
-  .promo-look {
-    display: inline-block;
-    width: 50%;
-  }
-  .promo-look__background {
-    background-image: url(../img/iphone-hand-2@1x.png), url(../img/background-1@1x.jpg);
-    background-repeat: no-repeat, no-repeat;
-    background-position: 0px 172px, -363px -38px;
-    background-size: auto, cover;
-  }
-  .main-nav {
-    background-color: #293545;
-    font-family: 'Open Sans', Helvetica, sans-serif;
-    display: none;
-    position: absolute;
-    z-index: 2;
-    top: 0px;
-    left: 1px;
-  }
-  .main-nav__list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  .main-nav__list a {
-    font-family: 'Open Sans', Helvetica, sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 0 68px;
-    width: 508px;
-    padding-top: 21px;
-    padding-bottom: 21px;
-    color: #ffffff;
-    display: block;
-    text-decoration: none;
-  }
-  .main-nav__list li {
-    line-height: 20px;
-    list-style-type: none;
-    border-top: 1px solid #495361;
-    border-bottom: 1px solid #000101;
-  }
-  .promo-look {
-    background: none;
-  }
-  __slogan {
-    font-size: 40px;
-  }
-}
-.promo-look__background {
-  background-color: transparent;
-}
-.download__button {
-  background-color: transparent;
-  font-family: 'Open Sans', Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 19px;
-  color: #ffffff;
-  text-align: center;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  border: 3px solid #ffffff;
-  border-radius: 30px;
-  display: block;
-  text-decoration: none;
-  width: 275px;
-  margin: 0 auto;
-  margin-top: -1px;
-  position: relative;
-  top: 28px;
-}
-.promo-text__img {
-  display: inline-block;
-  margin: 15px;
-}
-.promo-text__systems {
-  font-family: 'Open Sans', Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: lighter;
-  color: #ffffff;
-  text-align: center;
-  padding-top: 3px;
-  padding-bottom: 24px;
-  line-height: 24px;
-}
-.promo-text {
-  position: relative;
-  margin-top: 50px;
-  top: -5px;
-  left: 3px;
-  background-color: transparent;
 }
 .promo-offer {
   /*width: 320px;
@@ -486,6 +383,17 @@ th {
 }
 .advantage__group {
   margin-top: 113px;
+}
+/*---------- Планшетная версия ----------*/
+@media (min-width: 768px) {
+  .effect__container {
+    width: 700px;
+    margin: 0 auto;
+  }
+  .effet__picture {
+    font-size: 104.6px;
+    font-weight: bold;
+  }
 }
 .demo {
   width: 320px;

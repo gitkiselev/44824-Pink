@@ -1,324 +1,199 @@
 .page-header {
-	width: 320px;
-	margin: 0 auto;
-}
-.page-header__main-nav {
-	background-color: rgba(0, 0, 0, 0.3);
-	/*position: relative;*/
-	height: 66px;
-	/*visibility: hidden;/////////////*/
-	
-}
-.page-header__logo {
-	position: relative;
-	top: 22px;//////////
-	left: 20px;
-	width: 74px;
-	height: 24px;
-	z-index: 10;
-	
-}
-.page-header__open {
-	position: relative;
-	top: -3px;
-	left: 250px;
-	width: 50px;
-	height: 24px;
-	z-index: 10;
-	//visibility: hidden;////////////
-}
-.page-header__background {
-	position: relative;
-	top: 1px;
-	background-image:url(../img/iphone-hand-1.png), url(../img/background-1@1x.jpg);
-
-	background-repeat: no-repeat, no-repeat;
-	background-position: 0px 172px, -363px -38px;
-	/*min-height: 300px;*/
-	background-size:auto, cover;
+  width: 320px;
+  margin: 0 auto;
 }
 
-//глобальный контейнер
 .g-container {
-	width: 320px;
-	margin: 0 auto;
+  width: 320px;
+  margin: 0 auto;
+}
+/* -- Шапка нераскрытого меню -- */
+
+.page-header__main-nav {
+  background-color: @opacity-3;
+  height: 66px;
 }
 
+/*Логотип*/
+.page-header__logo {
+	margin-top: 23px;
+	margin-left: 21px;
+  
+    display: inline-block;
+ }
+/*menu-burger*/
+.page-header__open {
+  padding-top: 0px;
+  padding-left: 150px;
+  margin-top: 1px;
+  display: inline-block;
+  }
 
+.page-header__background {
+  background-image: url(../img/iphone-hand-1.png), 
+  url(../img/background-1@1x.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0px 172px, -368px -37px;
+  background-size: auto, cover;
+  position: relative;/*для привязки точки отсчета
+                      для выпадающего меню*/
+}
 
-//Выпадающее меню
 .main-nav {
-	background-color: @main-nav-bg;
-	font-family: @font-main;
-	display: none; //не забыть поставить в none;
-	position: absolute;
-	z-index: 2;
-	top: 0px;
-	left: 1px;
-}
+  position: absolute;
+  top: -3px;
+  background-color: @main-nav-bg;
+  font-family: @font-main;
+  display: block; /*block or none!!!!*/
+  }
 
+/*Выпадающее меню*/
 .main-nav__list {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  }
+
+.main-nav__item {
+  width: 320px;
 }
 
-.main-nav__list a {
-	font-family: @font-main;
-	font-size: @main-nav-list-a-font-size;
-	font-weight: @main-nav-list-a-font-weight;
-	text-transform: @main-nav-list-a-text-transform;
-	text-align: center;
-	padding: 0 68px;////0 68px
-	width: 183px;/////////////50px width319
-	padding-top: 21px;
-	padding-bottom: 21px;
-	color: @page-header-text-color;
-	/*border-top: @a-border-top;
-	border-bottom: @a-border-bottom;*/
-	display: block;
-	text-decoration: none;
-
-	
+.main-nav__item a {
+  font-family: @font-main;
+  font-size: @main-nav-list-a-font-size;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  width: 320px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  color: #ffffff;
+  display: inline-block;
+  text-decoration: none;
 }
 
-.main-nav__list li {
-		line-height: 20px;
-		list-style-type: none;
-		border-top: @a-border-top;
-	    border-bottom: @a-border-bottom;
-	
 
-	}
-
-
-
-
-.main-nav__logo, .main-nav__close {
-display: inline-block;
-padding: 0;
-margin: 0;
-text-decoration: none;
-display: inline-block;
-position: absolute;
-}
-
-.main-nav__toggle {
-	height: 68px;
-	
-}
-.main-nav__logo {
-	position: relative;
-	top: 0px;//////////////////
-	left: -103px;
-	width: 100px;
-}
-
+.main-nav__logo,
 .main-nav__close {
-	position: relative;
-	top: -69px;
-	left: 129px;
-	width: 100px;
+  padding: 0px 0px;
+  margin: 0;
+  text-decoration: none;
+  display: inline-block;
+  
 }
+.main-nav__item>.main-nav__logo {
+  width: 74px;
+  margin-top: 2px;
+  margin-left: 20px;
+}
+.main-nav__item>.main-nav__close {
+  width: 23px;
+  margin-top: 2px;
+  margin-left: 177px;
+}
+
+
+.logo-svg {
+  width: 74px;
+  display: inline-block;
+}
+
+.logo-cross {
+  width: 23px;
+  display: inline-block;
+}
+
+.main-nav__item {
+  line-height: 20px;
+  list-style-type: none;
+  border-top: @a-border-top;
+  border-bottom: @a-border-bottom;
+}
+
+
+
+  
+  
+/*Взгляните на жизнь иначе*/
 
 .promo-look {
-	display: block;
-	width: 320px;
-	/*background-color: @page-header-bg;//потом убрать*/
-	
-
-	&__slogan {
-		font-family: @font-main;
-		font-size: @promo-look-slogan-font-size;
-		font-weight: @promo-font-weight;
-		color: @promo-look-slogan-color;
-		text-align: center;
-		position: relative;
-		bottom: 316px;////314
-		margin-top: 337px;
-	}
+  display: inline-block;
+  width: 320px;
 }
-//ссылка "Скачать приложение"
-.promo-look__background {
-	background-color: @page-header-bg;
+
+.promo-wrapper {
+  background-color: #1e2631;
+  margin-top: 336px;
+  padding-top: 1px;
+}
+
+.promo-look__slogan {
+  font-family: @font-main;
+  font-size: @promo-look-slogan-font-size;
+  font-weight: 200;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-top: 1px;
+  
+}
+.download,
+.promo-text {
+  background-color: @page-header-bg;
+  
+}
+
+.download {
+  margin-top: 26px;
 }
 
 .download__button {
-	background-color: @page-header-bg;
-	font-family: @font-main;
-	font-weight: @bold;
-	font-size: @download-button-font-size;
-	color: @a-color;
-	text-align: center;
-	padding-top: 13px;
-	padding-bottom: 13px;
-	border: 3px solid @download-button-border;
-	border-radius: 30px;
-	display: block;
-	text-decoration: none;
-	width: 275px;
-	margin: 0 auto;
-	margin-top: -1px;
-	position: relative;
-	top: 28px;
-}
-.promo-text__img {
-	display: inline-block;
-	margin: 15px;
-}
+  background-color: @page-header-bg;
+  font-family: font-main;
+  font-weight: bold;
+  font-size: 19px;
+  color: @color-white;
+  text-align: center;
+  display: block;
+  border-top: 1px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border: 3px solid #ffffff;
+  border-radius: 30px;
+  text-decoration: none;
+  width: 275px;
+  margin: 0 auto;
+  }
 
-.promo-text__systems {
-	font-family: @font-main;
-	font-size: @promo-text-systems-font-size;
-	font-weight: @promo-text-systems-font-weight;
-	color: @promo-text-systems-color;
-	text-align: center;
-	padding-top: 3px;//!!!!!!!!!возможно придется менять
-	padding-bottom: 24px;//возможно придется менять
-	line-height: 24px;
+/*--Иконки операционных систем --*/
+
+.promo-text__img {
+  display: inline-block;
+  margin: 15px;
 }
 
 .promo-text {
-	position: relative;
-	margin-top: 50px;
-	top: -5px;
-	left: 3px;
-	background-color: @page-header-bg;
+  margin-top: 15px;
+  
 }
+
+.promo-text__systems {
+  font-family: @font-main;
+  font-size: 14px;
+  font-weight: lighter;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 3px;
+  padding-bottom: 30px;
+  line-height: 24px;
+}
+
+.promo-text {
+  background-color: @page-header-bg;
+}
+
+
 
 
 /*---------- Планшетная версия ----------*/
-
-@media (min-width: 768px){
-	.page-header {
-		width: 700px;
-		margin: 0 auto;
-	}
-	.g-container {
-		width: 700px;
-		margin: 0 auto;
-	}
-	.page-header__main-nav {
-	background-color: rgba(0, 0, 0, 0.3);
-	height: 110px;
-	}
-	.promo-look {
-		display: inline-block;
-		width: 50%;
-	}
-	.promo-look__background {
-		background-image: url(../img/iphone-hand-2@1x.png),
-		url(../img/background-1@1x.jpg);
-		background-repeat: no-repeat, no-repeat;
-		background-position: 0px 172px, -363px -38px;
-		background-size:auto, cover;
-	}
-	//Выпадающее меню
-	
-.main-nav {
-	background-color: @main-nav-bg;
-	font-family: @font-main;
-	display: none; //не забыть поставить в none;
-	position: absolute;
-	z-index: 2;
-	top: 0px;
-	left: 1px;
-}
-
-.main-nav__list {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-.main-nav__list a {
-	font-family: @font-main;
-	font-size: @main-nav-list-a-font-size;
-	font-weight: @main-nav-list-a-font-weight;
-	text-transform: @main-nav-list-a-text-transform;
-	text-align: center;
-	padding: 0 68px;////0 68px
-	width: 508px;/////////////50px width319
-	padding-top: 21px;
-	padding-bottom: 21px;
-	color: @page-header-text-color;
-	display: block;
-	text-decoration: none;
-	
-
-	
-}
-
-.main-nav__list li {
-		line-height: 20px;
-		list-style-type: none;
-		border-top: @a-border-top;
-	    border-bottom: @a-border-bottom;
-	
-
-	}
-
-
-
-
-	.promo-look {
-		background: none;
-	}
-		&__slogan {
-			
-			font-size: @promo-look-slogan-font-size-tab;//fixed
-			
-			
-	}
-
-
-	
-}
-//КОПИПАСТ!!!!!!!!!!отсюда и ниже еще не исправил!!!!!!
-//ссылка "Скачать приложение"
-.promo-look__background {
-	background-color: transparent;
-}
-
-.download__button {
-	background-color: transparent;
-	font-family: @font-main;
-	font-weight: @bold;
-	font-size: @download-button-font-size;
-	color: @a-color;
-	text-align: center;
-	padding-top: 13px;
-	padding-bottom: 13px;
-	border: 3px solid @download-button-border;
-	border-radius: 30px;
-	display: block;
-	text-decoration: none;
-	width: 275px;
-	margin: 0 auto;
-	margin-top: -1px;
-	position: relative;
-	top: 28px;
-}
-.promo-text__img {
-	display: inline-block;
-	margin: 15px;
-}
-
-.promo-text__systems {
-	font-family: @font-main;
-	font-size: @promo-text-systems-font-size;
-	font-weight: @promo-text-systems-font-weight;
-	color: @promo-text-systems-color;
-	text-align: center;
-	padding-top: 3px;//!!!!!!!!!возможно придется менять
-	padding-bottom: 24px;//возможно придется менять
-	line-height: 24px;
-}
-
-.promo-text {
-	position: relative;
-	margin-top: 50px;
-	top: -5px;
-	left: 3px;
-	background-color: transparent;
-}
