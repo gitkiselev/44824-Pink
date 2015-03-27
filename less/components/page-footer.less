@@ -4,6 +4,12 @@
 	background-color: @page-footer-bg;
 	font-family: @font-main;
 }
+@media (min-width: 700px) {
+	.page-footer {
+	width: 700px;
+	margin: 0 auto;
+	}
+}
 
 .page-footer__questions {
 	margin: 0 auto;
@@ -16,18 +22,40 @@
 	font-weight: @lighter;
 	color: @questions-item-color;
 }
+@media (min-width: 700px) {
+	.questions__item {
+		font-size: @questions-item-font-size-tab;
+		margin: 0 0;///////////////////////
+	}
+}
 
 .page-footer__item {
 	text-align: center;
 }
-
+@media (min-width: 700px) {
+.page-footer__item--tab1st2nd {
+	display: inline-block;
+	width: 216.5px;
+	margin: 0 64px; //надо будет еще подправить
+}
+.page-footer__item--tab3rd {
+	margin: 0 216px;
+	width: 267px;
+}
+}
 .page-footer__title {
 	font-size: @footer-font-size;
 	font-weight: @bold;
 	margin-top: 10px;
 	margin-bottom: -19px;
-	
 }
+@media (min-width: 700px) {
+	.page-footer__title {
+	margin-top: 10px;//может потом придется менять
+	margin-bottom: -19px;//тоже самое
+	}
+}
+
 .page-footer__text {
 	font-size: @page-footer-text-font-size;
 	font-weight: @lighter;

@@ -18,8 +18,13 @@
 				<div class="js">
 					<div class="page-header__main-nav">
 
-						<a class="page-header__logo" href="index.html">
-							<img class="logo-svg" src="img/logo-1.svg" <style> "fill: #fff"</style></a>
+						<a class="page-header__logo page-header__logo--tab" href="index.html">
+							<picture>
+								<img 
+								class="logo-svg logo-svg--tab" 
+								src="img/logo-1.svg" 
+								srcset="img/logo-1.svg 320w, img/Pink-logo-2@1xx.svg 700w">
+							</picture></a>
 
 						<a class="page-header__open" href="#">
 							<img src="img/menu-burger.svg" alt="open"></a>
@@ -30,7 +35,7 @@
 							<li class="main-nav__item">
 								
 								<a class="main-nav__logo" href="#">
-									<img class="logo-svg" src="img/logo-1.svg" alt=""></a>
+									<picture><img class="logo-svg" src="img/logo-1.svg" alt="" width="320" srcset="Pink-logo-2@1xx.svg 700w"></picture></a>
 								<a class="main-nav__close" href="#">
 									<img class="logo-cross" src="img/menu-cross.svg" alt=""></a>
 								</li>
@@ -53,7 +58,7 @@
 				<div class="promo-look">
 
 					<div class="promo-look__slogan">
-						Взгляните на жизнь
+						Взгляните на&nbsp;жизнь
 						<br>иначе!</div>
 					<div class="promo-wrapper">
 						<div class="download">
@@ -64,8 +69,8 @@
 							<img class="promo-text__img" src="img/android-logo.svg" alt="Android">
 							<img class="promo-text__img" src="img/microsoft-logo.svg" alt="Microsoft">
 							<figcaption class="promo-text__systems">
-								Доступно для iPhone, iPad, Android,
-								<br>Windows Phone, Mac OS, Windows 8</figcaption>
+								Доступно для iPhone, iPad,&nbsp; Android,<br>
+								Windows&nbsp;Phone, Mac&nbsp;OS, Windows&nbsp;8</figcaption>
 						</figure>
 					</div>
 				</div>
@@ -79,10 +84,11 @@
 	
 	<div class="promo-offer">
 		<div class="g-container">
-			<h1 class="promo-title">Устали от серости
-				мегаполиса?<br><br>
-			Нам есть, что вам
-				предложить!</h1>
+			<h1 class="promo-title">
+			<p class="promo-title-quest">Устали от серости
+				мегаполиса?</p>
+				<p class="promo-title-ans">Нам есть, что вам<br>
+					предложить!</p></h1>
 		</div>	
 	</div>
 	<div class="advantage">
@@ -109,21 +115,23 @@
 				
 			</div>
 		</div>
-		<div class="effect">
-					<div class="effect__container">
-						<div class="effect__picture">
+		<div class="advantage__demo">
+			<div class="g-container">
+				<div class="demo__screen">
+					<picture><img src="img/screen-1-3.png" alt="" srcset="img/screen-1-3.png 320w, img/iphone-screen-2-3@1x.png" alt=""></picture>
+				</div>
+			</div>	
+		</div>
+	</div>
+
+	<div class="effect">
+			<div class="effect__container">
+				<div class="effect__picture">
 							24
-						</div>
-					</div>
-	</div>
-	</div>
-	<div class="demo">
-		<div class="g-container">
-			<div class="demo__screen">
-				<img src="img/screen-1-3.png" alt="">
+				</div>
 			</div>
-		</div>	
 	</div>
+	
 	
 	<div class="reviews">
 		<div class="g-container">
@@ -170,9 +178,11 @@
 			<div class="prices-slider"><!--сделал блоком-->
 				<table class="prices__table">
 					<thead>
-						<td><h2 class="prices__table__head">База</h2><div class="prices__table__title">1,99 USD</div></td>
-						<td><h2 class="prices__table__head">Стандарт</h2><div class="prices__table__title">3,99 USD</div></td>
-						<td><h2 class="prices__table__head">Анлим</h2><div class="prices__table__title">9,99 USD</div></td>
+					<tr>
+						<th><h2 class="prices__table__head">База</h2><div class="prices__table__title">1,99 USD</div></th>
+						<th><h2 class="prices__table__head">Стандарт</h2><div class="prices__table__title">3,99 USD</div></th>
+						<th><h2 class="prices__table__head">Анлим</h2><div class="prices__table__title">9,99 USD</div></th>
+					</tr>
 					</thead>
 					<tr class="name-item-content">
 						<td>Розовый фильтр</td>
@@ -207,15 +217,15 @@
 						Свяжитесь с нами!</h3>
 				</div>
 			</div>
-			<div class="page-footer__item">
+			<div class="page-footer__item page-footer__item--tab1st2nd">
 				<p class="page-footer__title">Звоните:</p>
 				<p class="page-footer__text">8 (800) 1000 900</p>
 			</div>
-			<div class="page-footer__item">
+			<div class="page-footer__item page-footer__item--tab1st2nd">
 				<p class="page-footer__title">Пишите:</p>
 				<p class="page-footer__text">hello@pinkapp.ru</p>
 			</div>
-			<div class="page-footer__item">
+			<div class="page-footer__item page-footer__item--tab3rd">
 				<p class="page-footer__title">Приезжайте в гости:</p>
 				<p class="page-footer__text">Санкт-Петербург,<br>
 				Невский проспект, д. 20</p>

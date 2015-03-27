@@ -1,8 +1,13 @@
 .promo-offer {
-
-	/*width: 320px;
-	margin: 0 auto;*/
+	
+	
 	background-color: @promo-bg;
+}
+@media (min-width: 700px) {
+	.promo-offer {
+		width: 700px;
+		margin: 0 auto;
+	}
 }
 
 .promo-title {
@@ -11,16 +16,29 @@
 	font-weight: @promo-font-weight;
 	text-align: center;
 	color: @promo-color;
-	padding-top: 22px;///////
+	padding-top: 0;
+}
+.promo-title-quest {
+	margin-bottom: 30px;
+}
+@media (min-width: 700px) {
+	.promo-title {
+		font-size: @promo-font-size-tab;
+		padding-top: 0;
+		margin-top: 52px;
+		line-height: 40px;
+	}
+	.promo-title-quest {
+		display: block;
+		margin-bottom: 0px;
+		
+	}
+	.promo-title-ans {
+		display: block;
+		padding-top: 0px;
+		line-height: 46px;
+		margin-top: 8px;
+		margin-bottom: 0px;
+	}
 }
 
-
-.promo-title-q {
-	display: block;
-	margin-top: 1px;
-	
-}
-.promo-title-a {
-	display: block;
-	
-}

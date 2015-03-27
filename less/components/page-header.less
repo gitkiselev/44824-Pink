@@ -2,31 +2,76 @@
   width: 320px;
   margin: 0 auto;
 }
+@media (min-width: 700px) {
+	.page-header {
+	width: 700px;
+	margin: 0 auto;
+	}
+}
 
 .g-container {
   width: 320px;
   margin: 0 auto;
+  
 }
+@media (min-width: 700px) {
+	.g-container {
+	width: 700px;
+	margin: 0 auto;
+	}
+}
+
 /* -- Шапка нераскрытого меню -- */
 
 .page-header__main-nav {
   background-color: @opacity-3;
   height: 66px;
 }
+@media (min-width: 700px) {
+	.page-header__main-nav {
+		height: 109px;
+	}
+}
 
 /*Логотип*/
 .page-header__logo {
-	margin-top: 23px;
-	margin-left: 21px;
-  
-    display: inline-block;
+  margin-top: 23px;
+  margin-left: 21px;
+  display: inline-block;
  }
+ @media (min-width: 700px) {
+ 	.page-header__logo {
+ 	width: 145px;	
+ 	margin-top: 27px;
+ 	margin-left: 40px;
+ 	}
+ }
+ .logo-svg {
+ 	width: 74px;
+ }
+@media (min-width: 700px) {
+	.logo-svg--tab {
+		width: 145px;
+	}
+}
+
+
+
 /*menu-burger*/
 .page-header__open {
   padding-top: 0px;
   padding-left: 150px;
   margin-top: 1px;
   display: inline-block;
+  }
+  @media (min-width: 700px) {
+  	.page-header__open {
+  	padding-left: 0px;
+  	margin-left: 419px;
+  	margin-top: 0;
+  	padding-top: 1px;
+  	margin-top: 1px;
+  	}
   }
 
 .page-header__background {
@@ -38,13 +83,22 @@
   position: relative;/*для привязки точки отсчета
                       для выпадающего меню*/
 }
+@media (min-width: 700px) {
+	.page-header__background {
+	background-image: url(../img/iphone-hand-2@1x.png),
+	url(../img/background-1@1x.jpg);
+	background-position: center 184px, -170px 0px;
+	background-size: auto, cover;
+	position: relative;
+	}
+}
 
 .main-nav {
   position: absolute;
   top: -3px;
   background-color: @main-nav-bg;
   font-family: @font-main;
-  display: block; /*block or none!!!!*/
+  display: none; /*block or none!!!!*/
   }
 
 /*Выпадающее меню*/
@@ -56,6 +110,11 @@
 
 .main-nav__item {
   width: 320px;
+}
+@media (min-width: 700px) {
+	.main-nav__item {
+	width: 700px;
+	}
 }
 
 .main-nav__item a {
@@ -71,7 +130,11 @@
   display: inline-block;
   text-decoration: none;
 }
-
+@media (min-width: 700px) {
+	.main-nav__item a {
+	width: 700px;
+	}
+}
 
 .main-nav__logo,
 .main-nav__close {
@@ -92,17 +155,6 @@
   margin-left: 177px;
 }
 
-
-.logo-svg {
-  width: 74px;
-  display: inline-block;
-}
-
-.logo-cross {
-  width: 23px;
-  display: inline-block;
-}
-
 .main-nav__item {
   line-height: 20px;
   list-style-type: none;
@@ -111,20 +163,28 @@
 }
 
 
-
-  
-  
 /*Взгляните на жизнь иначе*/
 
 .promo-look {
   display: inline-block;
   width: 320px;
 }
-
+@media (min-width: 700px) {
+	.promo-look {
+	width: 366px;
+	margin-top: 45px;
+	}
+}
 .promo-wrapper {
   background-color: #1e2631;
-  margin-top: 336px;
-  padding-top: 1px;
+  margin-top: 315px;
+  padding-top: 10px;
+}
+@media (min-width: 700px) {
+	.promo-wrapper {
+	background-color: transparent;
+	margin-top: 26px;
+	}
 }
 
 .promo-look__slogan {
@@ -134,18 +194,41 @@
   color: #ffffff;
   text-align: center;
   margin-bottom: 0px;
-  margin-top: 0px;
+  margin-top: 20px;
   padding-top: 1px;
   
 }
+@media (min-width: 700px) {
+	.promo-look__slogan {
+	font-size: @promo-look-slogan-font-size-tab;
+	font-weight: 100;
+	margin-top: 52px;
+	margin-bottom: 0px;
+	
+	}
+}
+
+
 .download,
 .promo-text {
   background-color: @page-header-bg;
   
 }
+@media (min-width: 700px) {
+	.download,
+	.promo-text {
+	background-color: transparent;
+	}
+}
 
 .download {
-  margin-top: 26px;
+  margin-top: 19px;
+}
+@media (min-width: 700px) {
+	.download {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
 }
 
 .download__button {
@@ -165,18 +248,37 @@
   width: 275px;
   margin: 0 auto;
   }
-
+@media (min-width: 700px) {
+	.download__button {
+		background-color: transparent;
+		margin-bottom: 1px;
+		margin-top: 0px;
+	}
+}
 /*--Иконки операционных систем --*/
 
 .promo-text__img {
   display: inline-block;
   margin: 15px;
 }
-
+@media (min-width: 700px) {
+	.promo-text__img {
+		margin: 0;
+		margin-left: 45px;
+		margin-right: -14px;
+		padding-left: 0px;
+	}
+}
 .promo-text {
   margin-top: 15px;
-  
-}
+ }
+ @media (min-width: 700px) {
+ 	.promo-text {
+ 	margin-top: 46px;
+ 	margin-bottom: 1px;
+ 	margin-left: 41px;//57
+ 	}
+ }
 
 .promo-text__systems {
   font-family: @font-main;
@@ -188,12 +290,25 @@
   padding-bottom: 30px;
   line-height: 24px;
 }
-
+@media (min-width: 700px) {
+	.promo-text__systems {
+		font-size: 18px;
+		line-height: 24px;
+		padding-top: 33px;
+		padding-bottom: 107px;//////
+		width: 304px;
+		margin-right: 0px;
+	}
+}
 .promo-text {
   background-color: @page-header-bg;
+}
+@media (min-width: 700px) {
+	.promo-text {
+		background-color: transparent;
+	}
 }
 
 
 
 
-/*---------- Планшетная версия ----------*/
