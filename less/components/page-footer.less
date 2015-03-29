@@ -9,12 +9,18 @@
 	width: 700px;
 	margin: 0 auto;
 	}
+	.g-container {
+	/*display: block;//////?????????????????	*/
+	width: 700px;
+	padding: 0;
+  }
 }
+
 
 .page-footer__questions {
 	margin: 0 auto;
 	text-align: center;
-	padding-bottom: 1px;//временно
+	padding-bottom: 0px;//
 }
 
 .questions__item {
@@ -31,28 +37,48 @@
 
 .page-footer__item {
 	text-align: center;
+	margin: 0 auto;
+	padding: 9px 0px;///
+}
+.page-footer__contacts {
+	margin-top: 0px;//////////////
 }
 @media (min-width: 700px) {
-.page-footer__item--tab1st2nd {
-	display: inline-block;
-	width: 216.5px;
-	margin: 0 64px; //надо будет еще подправить
-}
-.page-footer__item--tab3rd {
-	margin: 0 216px;
+	.page-footer__contacts {
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-shrink: 1;
+	
+  }
+  .page-footer__item {
 	width: 267px;
-}
+	margin: 4px 0;
+	margin-bottom: 29px;
+	flex-shrink: 1;
+	padding: 0 1px;
+  }
+  .page-footer__item:last-child {
+	margin-bottom: 1px;
+  }
+  .page-footer__title {
+	padding-bottom: 0px;
+  }
+
+
+
 }
 .page-footer__title {
 	font-size: @footer-font-size;
 	font-weight: @bold;
-	margin-top: 10px;
-	margin-bottom: -19px;
+	margin-top: 0px;//10
+	margin-bottom: 0px;///-19
 }
 @media (min-width: 700px) {
 	.page-footer__title {
 	margin-top: 10px;//может потом придется менять
-	margin-bottom: -19px;//тоже самое
+	margin-bottom: 0;
 	}
 }
 
@@ -61,6 +87,7 @@
 	font-weight: @lighter;
 	color: @page-footer-text-color;
 	text-align: center;
+	margin: 6px auto;
 	
 	
 }

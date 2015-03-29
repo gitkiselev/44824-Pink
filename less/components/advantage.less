@@ -26,6 +26,29 @@
 	}
 
 }
+.advantage-item {
+	display: inline-block;
+
+}
+.advantage__group {
+	margin-top: 113px;//возможно придется менять!
+}
+
+
+.advantage__demo {
+	
+	width: 320px;
+	margin: 0 auto;
+	background-color: #f2f2f2;
+	padding-top: 26px;/////////////////
+	text-align: center;
+}
+.advantage__demo__screen  {
+	
+	margin: 0 auto;
+	margin-top: 1px;
+	}
+
 
 @media (min-width: 700px) {
 	.advantage {
@@ -38,30 +61,47 @@
 		line-height: 20px;//пока чтобы было!!!!!!!
 	}
 }
-@media (min-width: 700px) {
-	.advantage__demo {
-		width: 350px;
-		
-		display: inline-block;
-		
+/*@media (min-width: 700px) {
+	.g-container {
+		width: 700px;
 	}
+
+
 	.advantage-group {
-		width: 350px;
+		width: auto;
+		
+		display: block;
+		
+	}
+	.advantage__demo {
+		width: 347px;
 		
 		display: inline-block;
 		
 	}
-	g-container {
-		width: 350px;
+	
+	
+	
+	.advantage__demo__screen {
+		display: inline-block;
 	}
-}
-
-
-.advantage-item {
-	display: inline-block;
-
+}*/
+@media (min-width: 700px) {
+	.advantage__flex {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;//default
+		align-content: space-between;
+	}
+	
 }
 .advantage__group {
-	margin-top: 113px;//возможно придется менять!
+	order: 2;
+	margin: 0 1px;
 }
+.advantage__demo {
+	order: 1;
+	margin: 0 1px;
+}
+
 
