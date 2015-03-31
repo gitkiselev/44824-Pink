@@ -1,44 +1,89 @@
-.promo-offer {
-	
-	
-	background-color: @promo-bg;
-}
-@media (min-width: 700px) {
-	.promo-offer {
-		width: 700px;
-		margin: 0 auto;
-	}
-}
-
 .promo-title {
 	font-family: @font-main;
 	font-size: 24px;
 	font-weight: @promo-font-weight;
 	text-align: center;
 	color: @promo-color;
-	padding-top: 0;
+	&__quest {
+		margin-bottom: 30px;
+	}
 }
-.promo-title-quest {
-	margin-bottom: 30px;
-}
+
 @media (min-width: 700px) {
 	.promo-title {
 		font-size: @promo-font-size-tab;
 		padding-top: 0;
-		margin-top: 13px;//
+		margin-top: 54px;
 		line-height: 40px;
+		&__quest {
+		margin-bottom: 0;//переопределяем
+		
+		}
+		&__ans {
+		line-height: 46px;
+		margin-top: 8px;//Отступ между строками
+		}
 	}
-	.promo-title-quest {
-		display: block;
-		margin-bottom: 0px;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*@media (min-width: 700px) {
+	.promo-title {
+		font-size: @promo-font-size-tab;
+		padding-top: 0;
+		margin-top: 54px;
+		line-height: 40px;
+		
+
+
+
+
+}
+	.promo-title__quest {
+		
+		margin-bottom: 0;//переопределяем для планшетной версии
 		
 	}
-	.promo-title-ans {
-		display: block;
-		padding-top: 0px;
+	.promo-title__ans {
+		display: inline-block;
 		line-height: 46px;
-		margin-top: 8px;
-		margin-bottom: 0px;
+		margin-top: 6px;
+		margin-bottom: 0;
+		
 	}
-}
+}*/
+
 

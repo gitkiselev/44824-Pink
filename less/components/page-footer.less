@@ -1,20 +1,9 @@
 .page-footer {
-	width: 320px;
-	margin: 0 auto;
+	
 	background-color: @page-footer-bg;
 	font-family: @font-main;
 }
-@media (min-width: 700px) {
-	.page-footer {
-	width: 700px;
-	margin: 0 auto;
-	}
-	.g-container {
-	/*display: block;//////?????????????????	*/
-	width: 700px;
-	padding: 0;
-  }
-}
+
 
 
 .page-footer__questions {
@@ -45,7 +34,7 @@
 }
 @media (min-width: 700px) {
 	.page-footer__contacts {
-	display: inline-flex;
+	display: flex;//исправлено
 	justify-content: space-around;
 	align-items: center;
 	flex-wrap: wrap;
@@ -53,11 +42,9 @@
 	
   }
   .page-footer__item {
-	width: 267px;
+	width: 50%;//было 267px
 	margin: 4px 0;
 	margin-bottom: 29px;
-	flex-shrink: 1;
-	padding: 0 1px;
   }
   .page-footer__item:last-child {
 	margin-bottom: 1px;
@@ -91,7 +78,24 @@
 	
 	
 }
-.map {
-	
-	background-image: url(img/footer-map.png);
+.map__size {
+	width: 320px;
+	height: 200px;
+}
+@media (min-width: 700px) {
+	.map__size {
+		width: 700px;
+		height: 360px;
+	}
+}
+@media (min-width: 1200px) {
+
+	.g-container {//потом уберу, когда появятся другие блоки
+		width: 1200px;
+		margin: 0 auto;
+	}
+	.map__size {
+		width: 1200px;
+		height: 513px;
+	}
 }

@@ -1,6 +1,4 @@
 .prices {
-	width: 320px;
-	margin: 0 auto;
 	font-family: @font-main;
 	background-color: @prices-bg;
 	text-transform: @prices-text-transform;
@@ -24,4 +22,49 @@
 	font-size: @name-item-content-font-size;
 	line-height: @name-item-content-line-height;
 	color: @name-item-content-color;
+}
+
+/*Скрываем блок*/
+.prices__table-tab {
+	display: none;
+}
+@media (min-width: 700px) {
+	
+	.g-container {
+		width: 700px;
+		margin: 0 auto;
+	}
+	.prices {
+		text-transform: @prices-text-transform-tab;
+	}
+	.prices-slider {
+		display: none;/*нет слайдера в этой версии*/
+	}
+	.prices__table-tab {
+		display: block;/*показываем нужный блок*/
+		width: 600px;
+		margin: 0 auto;
+	}
+	.prices__table__head {
+		text-transform: @prices-text-transform;
+	}
+	.prices__table img {
+		text-align: center;
+	}
+	.bg-table-transparent {
+		/*background-color: #F2F2F2;*/
+	}
+	.bg-table {
+		background-color: #293545;
+	}
+	.name-item-content:first-child {
+	font-size: 14px;
+}
+
+	th,
+	td {
+		width: 150px;
+		
+	}
+
 }

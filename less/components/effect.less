@@ -1,0 +1,90 @@
+.effect {
+	display: none;/*Этот блок предназначен для других версий*/
+}
+
+@media (min-width: 700px) {
+	.effect {
+		display: block;
+		margin-top: 101px;///127
+		margin-bottom: 119px;//чтобы следующий блок не налазил
+		&__position {
+			position: relative;
+			float: left;
+			top: 27px;
+		}
+		&__picture {
+			/*position: absolute;*/
+			width: 127px;
+			height: 127px;
+			border: 11px solid @effect-color;
+			border-radius: 50%;
+			color: @effect-color;
+			font-size: 104.6px;
+			font-weight: @bold;
+			padding: 32px 32px;
+			margin-top: 0;///127было
+			margin-left: 65px;
+			padding-left: 37px;
+			padding-right: 27px;
+			margin-bottom: 0;//заготовка для возможных изменений
+		
+		}
+		&__timer {
+			position: absolute;
+			top: -65px;
+			left: 41px;
+			z-index:-1;
+		}
+		&__header {
+			margin-left: 347px;////
+		}
+		&__title {
+			font-size: 30px;
+			font-weight: @bold;
+			line-height: 36px;
+			width: 163px;//для правильного переноса слов
+			margin-top: 0px;
+			padding-bottom: 0px;
+			margin-bottom: 10px;
+		}
+		&__text {
+			font-size: 14px;
+			line-height: 24px;
+			width: 295px;///
+			margin-top: 0px;
+			margin-bottom: 0px;
+			padding-top: 0px;
+			padding-bottom: 5px;
+		}
+		&__link {
+			color: #d32c55;
+			text-decoration: underline;
+			font-size: 14px;
+			line-height: 24px;
+			display: inline-block;
+			padding-top: 5px;
+		}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+}

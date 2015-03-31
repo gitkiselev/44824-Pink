@@ -1,14 +1,3 @@
-.page-header {
-  width: 320px;
-  margin: 0 auto;
-}
-@media (min-width: 700px) {
-	.page-header {
-	width: 700px;
-	margin: 0 auto;
-	}
-}
-
 .g-container {
   width: 320px;
   margin: 0 auto;
@@ -24,53 +13,39 @@
 /* -- Шапка нераскрытого меню -- */
 
 .page-header__main-nav {
-  background-color: @opacity-3;
+  background-color: rgba(0, 0, 0, 0.3);//исправлено
   height: 66px;
 }
 @media (min-width: 700px) {
 	.page-header__main-nav {
-		height: 109px;
+		min-height: 109px;//исправлено
 	}
 }
 
-/*Логотип*/
+/*Логотип для мобильной и планшетной версий соответственно*/
 .page-header__logo {
-  margin-top: 23px;
-  margin-left: 21px;
+  padding-top: 22px;//исправил
+  padding-left: 20px;//исправил
   display: inline-block;
  }
  @media (min-width: 700px) {
  	.page-header__logo {
  	width: 145px;	
- 	margin-top: 27px;
- 	margin-left: 40px;
+  padding-top: 27px;
+  padding-left: 40px;
  	}
  }
- .logo-svg {
- 	width: 74px;
- }
-@media (min-width: 700px) {
-	.logo-svg--tab {
-		width: 145px;
-	}
-}
 
-
-
-/*menu-burger*/
+ /*menu-burger*/
 .page-header__open {
-  padding-top: 0px;
-  padding-left: 150px;
-  margin-top: 1px;
-  display: inline-block;
-  }
+  float: right;
+  padding-top: 21px;//исправил
+  padding-right: 20px;
+}
   @media (min-width: 700px) {
   	.page-header__open {
-  	padding-left: 0px;
-  	margin-left: 419px;
-  	margin-top: 0;
-  	padding-top: 1px;
-  	margin-top: 1px;
+  	padding-top: 44px;//исправлено на паддинги
+  	padding-right: 40px;
   	}
   }
 
@@ -95,27 +70,16 @@
 
 .main-nav {
   position: absolute;
-  top: -3px;
   background-color: @main-nav-bg;
   font-family: @font-main;
-  display: none; /*block or none!!!!*/
-  }
-
+  display: none;/*block or none!!!!!!!!!!!!!!!!!!*/
+    &__list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+}
 /*Выпадающее меню*/
-.main-nav__list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  }
-
-.main-nav__item {
-  width: 320px;
-}
-@media (min-width: 700px) {
-	.main-nav__item {
-	width: 700px;
-	}
-}
 
 .main-nav__item a {
   font-family: @font-main;
@@ -123,11 +87,11 @@
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
-  width: 320px;
+  width: 320px;//иначе ссылки прибиваются к левому краю по своей ширине
   padding-top: 21px;
   padding-bottom: 21px;
   color: #ffffff;
-  display: inline-block;
+  display: block;
   text-decoration: none;
 }
 @media (min-width: 700px) {
@@ -136,14 +100,14 @@
 	}
 }
 
-.main-nav__logo,
+/*.main-nav__logo,
 .main-nav__close {
-  padding: 0px 0px;
+  /*padding: 0px 0px;
   margin: 0;
   text-decoration: none;
   display: inline-block;
   
-}
+}*/
 .main-nav__item>.main-nav__logo {
   width: 74px;
   margin-top: 2px;
@@ -163,12 +127,12 @@
 }
 
 
-/*Взгляните на жизнь иначе*/
+/*Блок с надписью "Взгляните на жизнь иначе"*/
 
 .promo-look {
-  display: inline-block;
-  width: 320px;
+  display: inline-block;//не могу убрать
 }
+
 @media (min-width: 700px) {
 	.promo-look {
 	width: 366px;
@@ -182,7 +146,7 @@
 }
 @media (min-width: 700px) {
 	.promo-wrapper {
-	background-color: transparent;
+	background-color: transparent;//переопределяем фон
 	margin-top: 26px;
 	}
 }
@@ -207,107 +171,96 @@
 	
 	}
 }
-
-
-.download,
-.promo-text {
-  background-color: @page-header-bg;
-  
-}
-@media (min-width: 700px) {
-	.download,
-	.promo-text {
-	background-color: transparent;
-	}
-}
-
+/*Блок кнопки "Download" и сама кнопка*/
 .download {
+  margin: 0 auto;
   margin-top: 19px;
+  text-align: center;
+  &__button {
+      font-size: 19px;
+      border: 3px solid #ffffff;
+      border-radius: 30px;
+      padding: 13px 38px;
+      display: inline-block;
+      text-decoration: none;
+      color: @color-white;
+      font-weight: bold;
+      text-decoration: none;
+      
+  }
 }
+/*Блок кнопки "Download" и сама кнопка*/
+
 @media (min-width: 700px) {
 	.download {
 		margin-top: 0;
 		margin-bottom: 0;
-	}
-}
-
-.download__button {
-  background-color: @page-header-bg;
-  font-family: font-main;
-  font-weight: bold;
-  font-size: 19px;
-  color: @color-white;
-  text-align: center;
-  display: block;
-  border-top: 1px;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  border: 3px solid #ffffff;
-  border-radius: 30px;
-  text-decoration: none;
-  width: 275px;
-  margin: 0 auto;
+      &__button {
+        background-color: transparent;
+        margin-bottom: 1px;
+        margin-top: 0px;
+    }
   }
-@media (min-width: 700px) {
-	.download__button {
-		background-color: transparent;
-		margin-bottom: 1px;
-		margin-top: 0px;
-	}
 }
 /*--Иконки операционных систем --*/
+.promo-text {
+  /*margin-top: 15px;*/
+  margin: 16px 41px;
+    &__img {
+        display: inline-block;
+        margin: 15px;
+    }
+    &__systems {
+        font-family: @font-main;
+        font-size: 14px;
+        font-weight: lighter;
+        color: #ffffff;
+        padding-top: 3px;
+        padding-bottom: 29px;
+        line-height: 24px;
+    }
 
-.promo-text__img {
-  display: inline-block;
-  margin: 15px;
 }
 @media (min-width: 700px) {
 	.promo-text__img {
 		margin: 0;
-		margin-left: 45px;
-		margin-right: -14px;
-		padding-left: 0px;
+		margin-left: 31px;
 	}
 }
-.promo-text {
-  margin-top: 15px;
- }
- @media (min-width: 700px) {
+@media (min-width: 700px) {
  	.promo-text {
  	margin-top: 46px;
- 	margin-bottom: 1px;
- 	margin-left: 41px;//57
+ 	
+ 	margin-left: 55px;
  	}
  }
 
-.promo-text__systems {
-  font-family: @font-main;
-  font-size: 14px;
-  font-weight: lighter;
-  color: #ffffff;
-  text-align: center;
-  padding-top: 3px;
-  padding-bottom: 30px;
-  line-height: 24px;
-}
+/*Подписи под иконками ОС*/
+
 @media (min-width: 700px) {
-	.promo-text__systems {
-		font-size: 18px;
-		line-height: 24px;
-		padding-top: 33px;
-		padding-bottom: 107px;//////
-		width: 304px;
-		margin-right: 0px;
-	}
+    
+      .promo-text__systems {
+      font-size: 18px;
+      line-height: 24px;
+      padding-top: 33px;
+      padding-bottom: 91px;//в этом блоке не задаются маргины и паддинги
+      width: 304px;//чтобы текст уместился в две строки
+      
+      }
+  
 }
-.promo-text {
-  background-color: @page-header-bg;
-}
-@media (min-width: 700px) {
-	.promo-text {
-		background-color: transparent;
-	}
-}
+
+
+
+
+
+
+
+
+	
+
+
+
 
 
 
