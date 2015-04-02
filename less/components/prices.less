@@ -3,12 +3,17 @@
 	background-color: @prices-bg;
 	text-transform: @prices-text-transform;
 }
+.prices__table {
+	width: 836px;
+}
 .prices__table__head {
 	font-size: @prices-table-head-font-size;
 	font-weight: @prices-table-head-font-weight;
 	line-height: @prices-table-head-line-height;
 	text-align: center;
 	color: @prices-table-head-color;
+	padding-top: 18px;
+	line-height: 27px;
 }
 
 .prices__table__title {
@@ -17,17 +22,56 @@
 	line-height: @prices-value-line-height;
 	text-align: center;
 	color: @prices-value-color;
+	padding-top: 4px;
+	padding-bottom: 17px;
+	
+}
+.prices__hit-mobile {
+	position: relative;
+}
+.prices__hit-mobile:before {
+	content:"";
+	position: absolute;
+	top: 0;
+	left: -2px;
+	width: 74px;
+	height: 73px;
+	background-image: url(../img/hit-mobile.png);
+
+
+
+
 }
 .name-item-content {
 	font-size: @name-item-content-font-size;
 	line-height: @name-item-content-line-height;
-	color: @name-item-content-color;
+	background-color: @name-item-content-bg-color;
+	
 }
+.value-item-content {
+	float: right;
+	padding-right: 18px;
+}
+//Отступы для названий
+.name-item-content td {
+	padding-left: 22px;//а у планшетной версии сбросим
+	padding-top: 15px;
+	padding-bottom: 14px;
+	border: 2px solid #e5e5e5;
+}
+.bg-table {
+	background-color: #293545;
+	border: @border-head;
+	border-bottom: 2px solid #364150;
+}
+
+
 
 /*Скрываем блок*/
 .prices__table-tab {
 	display: none;
 }
+
 @media (min-width: 700px) {
 	
 	.g-container {
@@ -36,18 +80,55 @@
 	}
 	.prices {
 		text-transform: @prices-text-transform-tab;
+		
+
 	}
 	.prices-slider {
 		display: none;/*нет слайдера в этой версии*/
 	}
 	.prices__table-tab {
 		display: block;/*показываем нужный блок*/
-		width: 600px;
+		width: 620px;
 		margin: 0 auto;
+		padding-bottom: 65px;//может не совсем верно
 	}
+
+
+
 	.prices__table__head {
 		text-transform: @prices-text-transform;
+		font-size: @prices-table-head-font-size-tab;
+		padding-top: 14px;
+		line-height: 27px;
 	}
+	.prices__table__title {
+			font-size: @prices-value-font-size-tab;
+			padding-top: 0;
+			padding-bottom: 6px;
+			
+	}
+
+	.prices__hit {
+		position: relative;
+	}
+	.prices__hit:before {
+		content:"";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 61px;
+		height: 61px;
+		background-image: url(../img/hit.png);
+	}
+
+	
+
+
+
+
+
+
+
 	.prices__table img {
 		text-align: center;
 	}
@@ -56,15 +137,32 @@
 	}
 	.bg-table {
 		background-color: #293545;
+		border: @border-head;
+		border-bottom: 2px solid #364150;
 	}
-	.name-item-content:first-child {
-	font-size: 14px;
-}
+	.name-item-content td:first-child {
+		padding-left: 14px;//ставим только у названий
+		
+		font-size: 14px;
+
+	}
+	.name-item-content td {
+		padding-left: 0;//сбрасываем padding у картинок
+		padding-top: 9px;
+		padding-bottom: 1px;
+		border: 2px solid #e5e5e5;
+	}
 
 	th,
 	td {
 		width: 150px;
 		
 	}
+	.prices__image {
+		text-align: center;//выравниваем по центру картинки
+	}
+
+
+
 
 }

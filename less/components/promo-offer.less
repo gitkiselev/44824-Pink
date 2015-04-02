@@ -6,6 +6,7 @@
 	color: @promo-color;
 	&__quest {
 		margin-bottom: 30px;
+		display: block;
 	}
 }
 
@@ -22,11 +23,25 @@
 		&__ans {
 		line-height: 46px;
 		margin-top: 8px;//Отступ между строками
+		display: block;
 		}
 	}
 	
 }
-
+@media (min-width: 1200px) {
+	.promo-title {
+		font-size: @promo-font-size-desk;
+		font-weight: 100;
+		margin-top: 79px;
+		&__quest {
+			margin-bottom: 10px;
+			
+		}
+		&__ans {
+			line-height: 60px;
+		}
+	}
+}
 
 
 
