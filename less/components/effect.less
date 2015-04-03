@@ -26,21 +26,22 @@
 			font-size: 104.6px;
 			font-weight: @bold;
 			padding: 35px 32px;
-			margin-top: 0px;///127было
+			margin-top: 0px;
 			margin-left: 69px;
 			padding-left: 37px;
 			padding-right: 27px;
 			
-			}
-		
+		}
+		//правая часть блока
 		&__header {
-			height: 250px;
+			/*width: 228px;*/
+		
 			display: inline-block;
 			padding-top: 10px;
 			margin-left: 43px;////
 		}
 		&__title {
-			font-size: 30px;
+			font-size: @effect-title-font-size;
 			font-weight: @bold;
 			line-height: 36px;
 			width: 163px;//для правильного переноса слов
@@ -49,6 +50,7 @@
 			margin-bottom: 10px;
 		}
 		&__text {
+			width: 300px;
 			font-size: 14px;
 			line-height: 24px;
 			width: 295px;///
@@ -70,6 +72,7 @@
 	.effect {
 		margin-top: 16px;
 		margin-bottom: 119px;
+		background-color: #f2f2f2;
 		&__position {
 			width: 400px;
 			height: 269px;
@@ -86,11 +89,37 @@
 			width: 166px;
 			height: 104px;
 			line-height: 137px;
-	
-			
-
 		}
+		//правая часть блока	
+		&__header {
+			width: 500px;
+			margin-left: 22px;
+			
+		}
+		&__title {
+			width: 500px;
+			margin-top: 125px;////125
+		}	
+		&__text {
+			width: 500px;
+			font-size: @effect-text_and_link-font-size-desk;
+			line-height: 30px;
+		}
+		&__link {
+			font-size: @effect-text_and_link-font-size-desk;
+		}
+
 	}
+	.g-container {
+		width: 1200px;
+		margin: 0 auto;
+	}
+
+
+
+}
+	
+	
 }
 
 

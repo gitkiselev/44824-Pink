@@ -1,9 +1,12 @@
 .advantage {
 	background-color: @advantage-bg; //light-gray
+	position: relative;
+	margin-top: 63px;
 	&__flex {
 		display: flex;
 		flex-direction: column-reverse;
 		align-items: center;
+		margin-top: 10px;
 		
 	}
 	&__title {
@@ -12,6 +15,7 @@
 		line-height: 30px; //на глаз
 		text-align: center;
 		color: @advantage-title-color;
+		
 
 	}
 
@@ -27,6 +31,15 @@
 	}
 
 }
+.back {
+	position: absolute;
+	font-size: 100px;
+	bottom: 100%;
+	height: 30px;
+	width: 100%;
+	left: 0;
+	margin-bottom: -0.5px;
+}
 
 .advantage__demo-item {
 	display: block;
@@ -36,15 +49,27 @@
 .no-tab {
 	display: none;
 }
-
+.advantage__item:first-child {
+	padding-top: 33px;
+}
 
 
 
 @media (min-width: 700px) {
+	.back {
+		height: 65px;
+		
+		z-index: -1;
+	}
+	.advantage {
+		margin-top: 107px;
+	}
 	.advantage__flex {
 		flex-direction: row;
 		justify-content: space-around;
 		align-content: center;
+		height: 424px;//чтобы картинка вылезла за пределы блока
+		margin-bottom: 10px;
 		
 
 
@@ -58,10 +83,16 @@
 	}
 	.advantage__demo-item {
 	display: block;
+	position: relative;
+	top: -26px;
 }
 	.no-tab {
 		display: none;
 	}
+}
+.advantage__group {
+	position: relative;
+	top: -20px;
 }
 
 @media (min-width: 1200px) {
@@ -84,6 +115,7 @@
 	}
 	.advantage__demo__screen-full {
 		margin: 0 auto;
+		
 	}
 	.advantage__demo-item {
 		display: inline-flex;

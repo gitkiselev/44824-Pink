@@ -2,14 +2,11 @@
 	margin-top: 40px;
 	background-color: @page-footer-bg;
 	font-family: @font-main;
-}
-
-
-
-.page-footer__questions {
-	margin: 0 auto;
-	text-align: center;
-	padding-bottom: 0px;//
+		&__questions {
+		margin: 0 auto;
+		text-align: center;
+		padding-bottom: 0px;//
+		}
 }
 
 .questions__item {
@@ -17,28 +14,64 @@
 	font-weight: @lighter;
 	color: @questions-item-color;
 }
+.page-footer__link {
+	display: none;//скрываем ненужный блок
+}
+.page-footer__map {
+	position: relative;//для привязки треугольника
+}
+.page-footer__map img {
+	position: absolute;
+	width: 321px;
+	height: 32px;
+}
+
 @media (min-width: 700px) {
 	.questions__item {
 		font-size: @questions-item-font-size-tab;
 		margin: 0 0;///////////////////////
 	}
+	.page-footer__map img {
+		width: 701px;
+		height: 72px;
+	}
 }
-
+@media (min-width: 1200px) {
+	.questions__item {
+		font-size: @questions-item-font-size-desk;
+		margin-bottom: 37px;
+	}
+	
+}
+.page-footer__contacts {
+	margin-top: 0px;//////////////
+}
 .page-footer__item {
 	text-align: center;
 	margin: 0 auto;
 	padding: 9px 0px;///
 }
-.page-footer__contacts {
-	margin-top: 0px;//////////////
+.page-footer__text a {
+	color: #d32c55;
 }
+.page-footer__text a:hover {
+	color: #293545;
+	text-decoration: underline;
+}
+.page-footer__text a:active {
+	color: #d6d6d6;
+	text-decoration: none;
+}
+
+
+
+
 @media (min-width: 700px) {
 	.page-footer__contacts {
 	display: flex;//исправлено
 	justify-content: space-around;
 	align-items: center;
 	flex-wrap: wrap;
-	flex-shrink: 1;
 	
   }
   .page-footer__item {
@@ -56,6 +89,31 @@
 
 
 }
+@media (min-width: 1200px) {
+	.page-footer__contacts {
+		flex-wrap: no-wrap;
+	}
+	.page-footer__item {
+		width: 32%;
+	}
+	.page-footer__item:nth-child(1) {
+		order: 1;
+	}
+	.page-footer__item:nth-child(2) {
+		order: 3;
+	}
+	.page-footer__item:nth-child(3) {
+		order: 2;
+	}	
+
+
+
+
+}
+
+
+
+
 .page-footer__title {
 	font-size: @footer-font-size;
 	font-weight: @bold;
@@ -78,23 +136,93 @@
 	
 	
 }
-.map__size {
+.page-footer__map__size {
 	width: 320px;
 	height: 200px;
+	border: 0;
 }
+
 @media (min-width: 700px) {
-	.map__size {
+	 a:hover svg path {
+	 	fill: #293545;
+	 }
+	 a:active svg path {
+	 	opacity: 0.3;
+	 }
+	.page-footer__map__size {
 		width: 700px;
 		height: 360px;
 	}
+	
+	.page-footer__map {
+		display: block;
+	}
+	.page-footer__link {
+		display: flex;
+		justify-content: space-around;
+		padding-top: 36px;
+		padding-bottom: 36px;
+		
+	}
+	.page-footer__logo {
+		margin-left: 34px;
+	}
+	.page-footer__social {
+		margin-left: 58px;
+	}
+	.page-footer__social__item {
+		display: inline-block;
+		width: 45px;
+		height: 45px;
+		border: 3px solid #d6d6d6;
+		border-radius: 50%;
+		text-align: center;
+		line-height: 42px;
+		margin-right: 6px;
+		&:hover {
+			border: 3px solid #595959;
+		}
+		&:active {
+			opacity: 0.1;
+		}
+	}
+	.page-footer__style img:hover {
+		fill:#293545;
+	}
+
+
+
+	.page-footer__copyright {
+		margin-right: 36px;
+	}
+	.page-footer__style {
+		font-size: 14px;
+		line-height: 18px;
+		color: #293545;
+		margin-right: 15px;
+		margin-left: 15px;
+	}
+	
+	.page-footer__copyright a {
+		position: relative;
+		top: 11px;
+	}
+	.page-footer__copyright a:last-child {
+		top: 14px;
+	}
 }
+
 @media (min-width: 1200px) {
 
-	.g-container {//потом уберу, когда появятся другие блоки
+	.g-container {
 		width: 1200px;
 		margin: 0 auto;
 	}
-	.map__size {
+	.page-footer__map img {
+		width: 1201px;
+		height: 123px;
+	}
+	.page-footer__map__size {
 		width: 1200px;
 		height: 513px;
 		border: 0;

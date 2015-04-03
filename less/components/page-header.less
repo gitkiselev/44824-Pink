@@ -57,15 +57,23 @@
 
 
  /*Меню входа "menu-burger"*/
-.page-header__open {
-  float: right;
-  padding-top: 21px;//исправил
-  padding-right: 20px;
-}
+ .page-header__open {
+    float: right;
+    padding-top: 21px;//исправил
+    padding-right: 20px;
+    padding-bottom: 10px;
+    width: 50px;
+    height: 25px;
+    background-image: url(../img/menu-burger.svg);
+    background-repeat: no-repeat;
+    background-position: 0 21px;
+  }
+
   @media (min-width: 700px) {
   	.page-header__open {
   	padding-top: 44px;//исправлено на паддинги
   	padding-right: 40px;
+    background-position: 0 44px;
   	}
   }
 @media (min-width: 1200px) {
@@ -113,9 +121,18 @@
   .page-header__main-nav {
     display: inline-block;//чтобы рядом было меню
   }
+  .js-open {
+    display: none;
+  }
 }
-
-
+.page-header {
+  margin-bottom: 28px;/////////////////////////
+}
+.js-open {
+  display: block;
+  background-color: #293545;
+  min-height: 70px;
+}
 
 
 
@@ -123,7 +140,7 @@
   position: absolute;
   background-color: @main-nav-bg;
   font-family: @font-main;
-  display: none;/*BLOCK or NONE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+  display: block;/*BLOCK or NONE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     &__list {
         list-style-type: none;
         margin: 0;
@@ -135,8 +152,7 @@
     position: static;//возвращаем в нормальный поток
     display: inline-block;//чтобы стояла в одной строке с логотипом
     background-color: transparent;//убираем фон
-    /*background-color: rgba(0, 0, 0, 0.3);*/
-    margin-left: 105px;
+    margin-left: 149px;
 
     
   }
@@ -167,59 +183,28 @@
 @media (min-width: 1200px) {
   .main-nav__item {
     display: inline-block;
-    margin: 0 69px;
+    margin: 0 35px;
     
   }
-
-
-
-
-
   .main-nav__item a  {
     display: block;
     width: 0;//обнулим с других версий
     font-size: @main-nav-list-a-font-size-desk;
     font-weight: normal;
     text-transform: @capitalize;
-    padding: 30px 13px;//все равно не выравниваются
-    
+    padding-bottom: 14px;
+    width: 100%;
+    border-bottom: 2px solid transparent;
+
   }
-   
+  .main-nav__item a:hover {
+    border-bottom: 2px solid #fff;
+
+  } 
+  .main-nav__item a:active {
+    border-bottom: 2px solid transparent;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*.main-nav__logo,
-.main-nav__close {
-  /*padding: 0px 0px;
-  margin: 0;
-  text-decoration: none;
-  display: inline-block;
-  
-}*/
-/*.main-nav__item>.main-nav__logo {
-  width: 74px;
-  margin-top: 2px;
-  margin-left: 20px;
-}
-.main-nav__item>.main-nav__close {
-  width: 23px;
-  margin-top: 2px;
-  margin-left: 177px;
-}*/
-
 .main-nav__item {
   line-height: 20px;
   list-style-type: none;
@@ -282,16 +267,7 @@
     &__wrapper {
       margin-top: 45px;
     }
-
-
-
-
-
   }
-
-
-
-  
 }
 
 /*Блок кнопки "Download" и сама кнопка*/
@@ -299,6 +275,7 @@
   margin: 0 auto;
   margin-top: 19px;
   text-align: center;
+  
   &__button {
       font-size: 19px;
       border: 3px solid #ffffff;
@@ -311,6 +288,11 @@
       text-decoration: none;
       
   }
+  &__button:hover {
+    background-color: #fff;
+  }
+  
+  
 }
 /*Блок кнопки "Download" и сама кнопка*/
 
