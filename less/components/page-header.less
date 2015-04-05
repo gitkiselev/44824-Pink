@@ -8,6 +8,7 @@
 	width: 700px;
 	margin: 0 auto;
 	}
+  
 }
 @media (min-width: 1200px) {
   .g-container {
@@ -17,40 +18,44 @@
   
   .main-nav {
     display: inline-block;
+    width: 60%;
   }
 
 }
 /* -- Шапка нераскрытого меню -- */
 
-.page-header__main-nav {
-  /*background-color: rgba(0, 0, 0, 0.3);//исправлено*/
-  height: 66px;
+.page-header{
+  margin-bottom: 0;
+  &__main-nav {
+    /*background-color: rgba(0, 0, 0, 0.3);//исправлено*/
+    height: 66px;
+    
+  
+  @media (min-width: 700px) {
+      min-height: 108px;//исправлено
+   }
+   
+  }
 }
-@media (min-width: 700px) {
-	.page-header__main-nav {
-		min-height: 109px;//исправлено
-	}
-}
+
 
 /*Логотип для мобильной и планшетной версий соответственно*/
 .page-header__logo {
   padding-top: 22px;//исправил
   padding-left: 20px;//исправил
   display: inline-block;
- }
- @media (min-width: 700px) {
- 	.page-header__logo {
- 	width: 145px;	
-  padding-top: 27px;
-  padding-left: 40px;
- 	}
- }
-@media (min-width: 1200px) {
-  .page-header__logo {
-    padding-top: 26px;
-    padding-left: 130px;
+ 
+   @media (min-width: 700px) {
+   	width: 145px;	
+    padding-top: 27px;
+    padding-left: 40px;
+   	}
+   
+   @media (min-width: 1200px) {
+      padding-top: 26px;
+      padding-left: 130px;
 
-  }
+    }
   
 }
 
@@ -58,6 +63,7 @@
 
  /*Меню входа "menu-burger"*/
  .page-header__open {
+    display: block;///////////////////////////BLOCK or NONE
     float: right;
     padding-top: 21px;//исправил
     padding-right: 20px;
@@ -68,8 +74,30 @@
     background-repeat: no-repeat;
     background-position: 0 21px;
   }
-
-  @media (min-width: 700px) {
+  .page-header__open:hover {
+    background-image: url(../img/menu-burger-hover.svg);
+  }
+  .page-header__open:active {
+    opacity: 0.3;
+  }
+  /*Закрыть меню "CROSS"*/
+  .page-header__close {
+    display: block;//////////////////////////BLOCK or NONE
+    float: right;
+    padding-top: 21px;
+    padding-bottom: 20px;
+    padding-right:18px;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/menu-cross.svg);
+    background-repeat: no-repeat;
+    background-position: 0 22px;
+    
+  }
+  .page-header__close:hover {
+    background-image: url(../img/menu-cross-hover.svg);
+  }
+@media (min-width: 700px) {
   	.page-header__open {
   	padding-top: 44px;//исправлено на паддинги
   	padding-right: 40px;
@@ -86,8 +114,7 @@
 
 
 .page-header__inner {
-  background-image: url(../img/iphone-hand-1.png), 
-  url(../img/background-1@1x.jpg);
+  background-image: url(../img/iphone-hand-1.png), url(../img/background-1@1x.jpg);
   background-repeat: no-repeat, no-repeat;
   background-position: 0px 172px, -368px -37px;
   background-size: auto, cover;
@@ -95,12 +122,19 @@
                       для выпадающего меню*/
 }
 .page-header__opacity {
+  display: block;
   background-color: rgba(0, 0, 0, 0.3);
 }
+.page-header__opacity--no {
+  
+  
+  background-color: rgba(41, 53, 69, 1);
+  border-bottom: 1px solid #010101;
+}
+
 @media (min-width: 700px) {
 	.page-header__inner {
-	background-image: url(../img/iphone-hand-2@1x.png),
-	url(../img/background-1@1x.jpg);
+	background-image: url(../img/iphone-hand-2@1x.png),	url(../img/background-1@1x.jpg);
 	background-position: center 184px, -170px 0px;
 	background-size: auto, cover;
 	position: relative;
@@ -118,41 +152,54 @@
   .page-header__opacity {
     background-color: rgba(0, 0, 0, 0.3);
   }
-  .page-header__main-nav {
-    display: inline-block;//чтобы рядом было меню
-  }
-  .js-open {
+  .page-header__opacity--no {
     display: none;
   }
+  .page-header__main-nav {
+    
+    display: inline-block;//чтобы рядом было меню
+    //width: 500px;
+  }
+  /*.js-open {
+    display: none;//в этой версии не нужно
+  }*/
 }
 .page-header {
   margin-bottom: 28px;/////////////////////////
 }
-.js-open {
-  display: block;
-  background-color: #293545;
-  min-height: 70px;
-}
+
 
 
 
 .main-nav {
   position: absolute;
+  top: 67px;//надо 69 после выравнивания page-header
+  width:100%;
   background-color: @main-nav-bg;
   font-family: @font-main;
-  display: block;/*BLOCK or NONE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+  display: none;/*BLOCK or NONE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    &-js {
+      display: block;//добавляется при событии
+    }
     &__list {
         list-style-type: none;
         margin: 0;
         padding: 0;
     }
 }
+@media (min-width: 700px) {
+  .main-nav {
+    top: 109px;
+  }
+}
 @media (min-width: 1200px) {
   .main-nav {
     position: static;//возвращаем в нормальный поток
+    width: 700px;
     display: inline-block;//чтобы стояла в одной строке с логотипом
     background-color: transparent;//убираем фон
     margin-left: 149px;
+    padding-top: 21px;
 
     
   }
@@ -168,13 +215,19 @@
   font-weight: 600;
   text-transform: @uppercase;
   text-align: center;
-  width: 320px;//иначе ссылки прибиваются к левому краю по своей ширине
+  width: 100%;//иначе ссылки прибиваются к левому краю по своей ширине
   padding-top: 21px;
   padding-bottom: 21px;
   color: #ffffff;
   display: block;
   text-decoration: none;
+  &:hover {
+    color: #d32c55;
+  }
+
+
 }
+
 @media (min-width: 700px) {
 	.main-nav__item a {
 	width: 700px;
@@ -199,6 +252,7 @@
   }
   .main-nav__item a:hover {
     border-bottom: 2px solid #fff;
+    color: #fff;
 
   } 
   .main-nav__item a:active {
@@ -290,6 +344,13 @@
   }
   &__button:hover {
     background-color: #fff;
+    color: #d32c55;
+  }
+  &__button:active {
+    background-color: rgba(255, 255, 255, 1);//где-то перебиваются стили
+    //background-color: #fff;
+    color: rgba(211, 44, 85, 0.3);
+    
   }
   
   
@@ -318,14 +379,17 @@
 
 
 /*--Иконки операционных систем --*/
-.promo-look__text {
+.promo-look__description {
   /*margin-top: 15px;*/
-  margin: 16px 41px;
-    &__img {
+  margin: 16px 42px;
+}
+
+.promo-look__img {
         display: inline-block;
         margin: 15px;
     }
-    &__systems {
+
+    .promo-look__info {
         font-family: @font-main;
         font-size: 14px;
         font-weight: lighter;
@@ -335,48 +399,65 @@
         line-height: 24px;
     }
 
-}
+
+
+
+
+
+
+
 
 /*Иконки ОС и подписи к ним*/
 @media (min-width: 700px) {
-  .promo-look__text {
+  .promo-look__description {
   margin-top: 46px;
   margin-left: 55px;
-    &__img {
+  }
+  .promo-look__img {
       margin: 0;
       margin-left: 31px;
     }
-    &__systems {
+    .promo-look__info {
       font-size: 18px;
       line-height: 24px;
       padding-top: 33px;
       padding-bottom: 91px;//в этом блоке не задаются маргины и паддинги
       width: 304px;//чтобы текст уместился в две строки
     }
-  }
 }
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 1200px) {
-  .promo-look__text {
+  .promo-look__description {
     margin-top: 64px;
     margin-left: 35px;/////////////////
-    &__img:nth-child(1){
+  }
+  .promo-look__img:nth-child(1){
      margin-left: 44px;
     }
   
 
 
-    &__img:nth-child(2) {
+    .promo-look__img:nth-child(2) {
       margin-left: 30px;
       
     }
-    &__img:nth-child(3) {
+    .promo-look__img:nth-child(3) {
       margin-bottom: 3px;
     }
     
-    &__systems {
+    .promo-look__info {
       padding-top: 52px;
       padding-bottom: 105px;
       /*padding-right: 0;*/
     }
-  }
 }

@@ -2,41 +2,43 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Pink</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/normalize.css"> 
-  <link rel="stylesheet" href="css/style.css"> 
-  <script src="js/script.js"></script>
+	<meta charset="utf-8">
+	<title>HTML Academy: Pink</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+	
+	
 </head>
 
 <body>
 
-<header class="page-header">
+	<header class="page-header">
 
 		<div class="g-container">
 			<div class="page-header__inner">
-				<div class="page-header__opacity"><!--Обертка блоков в опасити-->
-					<div class="page-header__main-nav js-open">
+				<div class="page-header__opacity">
+					<!--Обертка блоков в опасити-->
+					<div class="page-header__main-nav">
 
-						<a class="page-header__logo page-header__logo--tab" href="index.html">
+						<a class="page-header__logo" href="index.html">
 							<picture>
 
 								<source media="(min-width: 320px) and (max-width: 699px)" srcset="img/logo-1.svg">
 								<source media="(min-width: 700px) and (max-width: 1199px)" srcset="img/Pink-logo-2@1xx.svg">
 								<source media="(min-width: 1200px)" srcset="img/Pink-logo-3@1x.png">
 
-								<img class="logo-svg logo-svg--tab"  src="img/logo-1.svg" alt="">
-
-
-							</picture>
+								<img class="logo-svg logo-svg--tab"  src="img/logo-1.svg" alt=""></picture>
 						</a>
 
-						<a class="page-header__open" href="#"></a>
-						
+						<a class="page-header__open" href="#"></a><!--burger/cross-->
 
 					</div>
-					<nav class="main-nav js-close">
+					<nav class="main-nav">
 						<ul class="main-nav__list">
 							<li class="main-nav__item">
 								<a  href="#">Информация</a>
@@ -63,13 +65,13 @@
 						<div class="download">
 							<a class="download__button" href="#">Скачать приложение</a>
 						</div>
-						<figure class="promo-look__text">
-							<img class="promo-look__text__img" src="img/apple-logo.svg" alt="Apple">
-							<img class="promo-look__text__img" src="img/android-logo.svg" alt="Android">
-							<img class="promo-look__text__img" src="img/microsoft-logo.svg" alt="Microsoft">
-							<figcaption class="promo-look__text__systems">
-								Доступно для iPhone, iPad,&nbsp; Android,<br>
-								Windows&nbsp;Phone, Mac&nbsp;OS, Windows&nbsp;8</figcaption>
+						<figure class="promo-look__description">
+							<img class="promo-look__img" src="img/apple-logo.svg" alt="Apple">
+							<img class="promo-look__img" src="img/android-logo.svg" alt="Android">
+							<img class="promo-look__img" src="img/microsoft-logo.svg" alt="Microsoft">
+							<figcaption class="promo-look__info">
+								Доступно для iPhone, iPad,&nbsp; Android,
+								<br>Windows&nbsp;Phone, Mac&nbsp;OS, Windows&nbsp;8</figcaption>
 						</figure>
 					</div>
 				</div>
@@ -77,156 +79,232 @@
 		</div>
 	</header>
 
-	
-	
-	
-	
 	<div class="promo-offer">
 		<div class="g-container">
-			<h1 class="promo-title"><!--h1-->
-			<span class="promo-title__quest">Устали от серости
-				мегаполиса?</span>
+			<h1 class="promo-title">
+				<!--h1-->
+				<span class="promo-title__quest">
+					Устали от серости мегаполиса?
+				</span>
 
-				<span class="promo-title__ans">Нам есть, что вам<br>
-					предложить!</span></h1>
-		</div>	
+				<span class="promo-title__ans">
+					Нам есть, что вам
+					<br>предложить!</span>
+			</h1>
+		</div>
 	</div>
 	<div class="advantage">
 		<div class="g-container">
-		<svg class="back" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" preserveAspectRatio="none">
-			<polygon points="50,0 0,50 50,50" fill="#F2F2F2"></polygon>
-		</svg>	
+			<svg class="back" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" preserveAspectRatio="none">
+				<polygon points="50,0 0,50 50,50" fill="#F2F2F2"></polygon>
+			</svg>
 			<div class="advantage__flex">
 				<div class="advantage__demo__screen-full">
-					
-					<div class="advantage__demo-item no-tab"><img src="img/iphone-screen-3-1@1x.png" alt=""></div>
-					<div class="advantage__demo-item no-tab"><img src="img/iphone-screen-3-2@1x.png" alt=""></div>
+
+					<div class="advantage__demo-item no-tab">
+						<img src="img/iphone-screen-3-1@1x.png" alt=""></div>
+					<div class="advantage__demo-item no-tab">
+						<img src="img/iphone-screen-3-2@1x.png" alt=""></div>
 					<div class="advantage__demo-item">
 						<picture>
 							<source media="(min-width: 320px) and (max-width: 699px)" srcset="img/screen-1-3.png">
 							<source media="(min-width: 700px) and (max-width: 1199px)" srcset="img/iphone-screen-2-3@1x.png">
 							<source media="(min-width: 1200px)" srcset="img/iphone-screen-3-3@1x.png">
-							<img src="img/screen-1-3.png" alt="">
-						</picture>
-
-
+							<img src="img/screen-1-3.png" alt=""></picture>
 					</div>
 				</div>
-				
-
 
 				<div class="advantage__group">
 					<div class="advantage__item">
 						<h2 class="advantage__title">Поднимает настроение</h2>
-						<p class="advantage__description">Приложение позволит вам победить<br>
-						осеннюю хандру и депрессию<br>
-						буквально в несколько кликов!</p>
+						<p class="advantage__description">
+							Приложение позволит вам победить
+							<br>
+							осеннюю хандру и депрессию
+							<br>буквально в несколько кликов!</p>
 					</div>
 					<div class="advantage__item">
 						<h2 class="advantage__title">Меняет мир вокруг</h2>
-						<p class="advantage__description">Сделайте снимок и украсьте его<br>
-						смайликом или текстовой подписью,<br>
-						чтобы усилить эффект</p>
+						<p class="advantage__description">
+							Сделайте снимок и украсьте его
+							<br>
+							смайликом или текстовой подписью,
+							<br>чтобы усилить эффект</p>
 					</div>
 					<div class="advantage__item">
 						<h2 class="advantage__title">Заводит новых друзей</h2>
-						<p class="advantage__description">Ставьте лайки, комментируйте, делитесь<br>
-						фотографиями с друзьями и заводите<br>
-						новых</p>
+						<p class="advantage__description">
+							Ставьте лайки, комментируйте, делитесь
+							<br>
+							фотографиями с друзьями и заводите
+							<br>новых</p>
 					</div>
-					
-				</div>
-				
 
+				</div>
 
 			</div>
-		
+
 		</div>
 	</div>
 	<div class="effect">
 		<div class="g-container">
 			<div class="effect__position">
-				<div class="effect__picture"><!--<img class="effect__timer" src="img/timer-2.svg" alt="timer">-->
-							24
+				<div class="effect__picture">
+					<!--<img class="effect__timer" src="img/timer-2.svg" alt="timer">
+					-->
+24
 				</div>
 			</div>
-				<section class="effect__header">
-					<h2 class="effect__title">Эффект на 24 часа!</h2>
-					<p class="effect__text">Британские ученые провели исследования
+			<section class="effect__header">
+				<h2 class="effect__title">Эффект на 24 часа!</h2>
+				<p class="effect__text">
+					Британские ученые провели исследования
 					и доказали, что положительный эффект
-					 от&nbsp;использования приложения длится
-					  целые сутки!</p>
-					<a class="effect__link" href="#">Узнать больше об исследовании</a>
-				</section>
+					от&nbsp;использования приложения длится
+					целые сутки!
+				</p>
+				<a class="effect__link" href="#">Узнать больше об исследовании</a>
+			</section>
 		</div>
 	</div>
-	
-	
+
 	<div class="reviews">
 		<div class="g-container">
 			<div class="slider-reviews">
 				<div class="slider-reviews__item">
-					<p><cite class="slider-reviews__header">Николай Петров</cite></p>
-					<blockquote class="slider-reviews__text"><p>&laquo;Это приложение перевернуло мой мир
-					и позволило по-новому взглянуть на
-					привычные серые вещи! А еще я
-					познакомился со своей будущей женой
-					в комментариях к выложенной
-					фотографии!&raquo; </p></blockquote>
+					
+					<blockquote class="slider-reviews__text">
+					<p>
+						<cite class="slider-reviews__header">Николай Петров</cite>
+					</p>
+					<p class="reviews__text">
+							Это приложение перевернуло мой мир
+							и позволило по-новому взглянуть на
+							привычные серые вещи! А еще я
+							познакомился со своей будущей женой
+						    в комментариях к выложенной
+							фотографии!
+					</p>
+					</blockquote>
 				</div>
 				<div class="slider-reviews__item">
-					<p><cite class="slider-reviews__header">Николай Иванов</cite></p>
-					<blockquote class="slider-reviews__text"><p>&laquo;Это приложение перевернуло мой мир
-					и позволило по-новому взглянуть на
-					привычные серые вещи! А еще я
-					познакомился со своей будущей женой
-					в комментариях к выложенной
-					фотографии!&raquo; </p></blockquote>
+					
+					<blockquote class="slider-reviews__text">
+					<p>
+						<cite class="slider-reviews__header">Николай Иванов</cite>
+					</p>
+					<p class="reviews__text">
+							Это приложение перевернуло мой мир
+							и позволило по-новому взглянуть на
+							привычные серые вещи! А еще я
+							познакомился со своей будущей женой
+							в комментариях к выложенной
+							фотографии!
+					</p>
+					</blockquote>
 				</div>
 				<div class="slider-reviews__item">
-					<p><cite class="slider-reviews__header">Николай Светлов</cite></p>
-					<blockquote class="slider-reviews__text"><p>&laquo;Это приложение перевернуло мой мир
-					и позволило по-новому взглянуть на
-					привычные серые вещи! А еще я
-					познакомился со своей будущей женой
-					в комментариях к выложенной
-					фотографии!&raquo; </p></blockquote>
+					
+					<blockquote class="slider-reviews__text">
+						<p>
+						<cite class="slider-reviews__header">Николай Светлов</cite>
+					</p>
+					<p class="reviews__text">
+							Это приложение перевернуло мой мир
+							и позволило по-новому взглянуть на
+							привычные серые вещи! А еще я
+							познакомился со своей будущей женой
+							в комментариях к выложенной
+							фотографии!
+					</p>
+					</blockquote>
 				</div>
-				<div class="slider-pagination">
-					<i class="slider-pagination__item slider-pagination__item--active"></i>
-					<i class="slider-pagination__item"></i>
+				<div class="slider-pagination"> <i class="slider-pagination__item slider-pagination__item--active"></i> <i class="slider-pagination__item"></i>
 					<i class="slider-pagination__item"></i>
 				</div>
-			</div>	
-		</div>		
-		
-		
+			</div>
+		</div>
+
 	</div>
 	<div class="prices">
 		<div class="g-container">
-			<div class="prices-slider"><!--сделал блоком-->
+
+
+		
+
+ 
+</div>
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div class="prices-slider">
+
+			<svg class="back2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" preserveAspectRatio="none">
+				<polygon points="50,0 0,50 50,50" fill="#F2F2F2"></polygon>
+			</svg>
+				<!--сделал блоком-->
 				<table class="prices__table">
 					<thead>
-					<tr>
-						<th class="bg-table"><div class="prices__table__head">База</div><div class="prices__table__title">1,99 USD</div></th>
-						<th class="bg-table"><div class="prices__table__head prices__hit-mobile">Стандарт</div><div class="prices__table__title">3,99 USD</div></th>
-						<th class="bg-table"><div class="prices__table__head">Анлим</div><div class="prices__table__title">9,99 USD</div></th>
-					</tr>
+						<tr>
+							<th class="bg-table">
+								<div class="prices__table__head">База</div>
+								<div class="prices__table__title">1,99 USD</div>
+							</th>
+							<th class="bg-table">
+								<div class="prices__table__head prices__hit-mobile">Стандарт</div>
+								<div class="prices__table__title">3,99 USD</div>
+							</th>
+							<th class="bg-table">
+								<div class="prices__table__head">Анлим</div>
+								<div class="prices__table__title">9,99 USD</div>
+							</th>
+						</tr>
 					</thead>
 					<tr class="name-item-content">
-						<td>Розовый фильтр<img class="value-item-content" src="img/yes.svg" alt="yes"></td>
-						<td>Розовый фильтр<img class="value-item-content" src="img/yes.svg" alt="yes"></td>
-						<td>Розовый фильтр<img class="value-item-content" src="img/yes.svg" alt="yes"></td>
+						<td>
+							Розовый фильтр
+							<img class="value-item-content" src="img/yes.svg" alt="yes"></td>
+						<td>
+							Розовый фильтр
+							<img class="value-item-content" src="img/yes.svg" alt="yes"></td>
+						<td>
+							Розовый фильтр
+							<img class="value-item-content" src="img/yes.svg" alt="yes"></td>
 					</tr>
 					<tr class="name-item-content">
-						<td>Смайлики<img class="value-item-content" src="img/no.svg" alt="no"></td>
-						<td>Смайлики<img class="value-item-content" src="img/yes.svg" alt="yes"></td>
-						<td>Смайлики<img class="value-item-content" src="img/yes.svg" alt="yes"></td>
+						<td>
+							Смайлики
+							<img class="value-item-content" src="img/no.svg" alt="no"></td>
+						<td>
+							Смайлики
+							<img class="value-item-content" src="img/yes.svg" alt="yes"></td>
+						<td>
+							Смайлики
+							<img class="value-item-content" src="img/yes.svg" alt="yes"></td>
 					</tr>
 					<tr class="name-item-content">
-						<td>Комментарии<img class="value-item-content" src="img/no.svg" alt="no"></td>
-						<td>Комментарии<img class="value-item-content" src="img/no.svg" alt="no"></td>
-						<td>Комментарии<img class="value-item-content" src="img/no.svg" alt="no"></td>
+						<td>
+							Комментарии
+							<img class="value-item-content" src="img/no.svg" alt="no"></td>
+						<td>
+							Комментарии
+							<img class="value-item-content" src="img/no.svg" alt="no"></td>
+						<td>
+							Комментарии
+							<img class="value-item-content" src="img/no.svg" alt="no"></td>
 					</tr>
 				</table>
 				<div class="slider-pagination">
@@ -234,155 +312,163 @@
 					<i class="slider-pagination__item"></i>
 					<i class="slider-pagination__item"></i>
 				</div>
-			</div>	
+			</div>
 
 			<!--Таблица для планшетной и десктопной версии-->
 
 			<table class="prices__table-tab">
 				<thead>
 					<tr>
-						<th class="bg-table-transparent"></th><!--совпадает с фоном-->
-						<th class="bg-table"><div class="prices__table__head">База</div><div class="prices__table__title">1,99 USD</div></th>
-						<th class="bg-table"><div class="prices__table__head prices__hit">Стандарт</div><div class="prices__table__title">3,99 USD</div></th>
-						<th class="bg-table"><div class="prices__table__head">Анлим</div><div class="prices__table__title">9,99 USD</div></th>
+						<th class="bg-table-transparent"></th>
+						<!--совпадает с фоном-->
+						<th class="bg-table">
+							<div class="prices__table__head">База</div>
+							<div class="prices__table__title">1,99 USD</div>
+						</th>
+						<th class="bg-table">
+							<div class="prices__table__head prices__hit">Стандарт</div>
+							<div class="prices__table__title">3,99 USD</div>
+						</th>
+						<th class="bg-table">
+							<div class="prices__table__head">Анлим</div>
+							<div class="prices__table__title">9,99 USD</div>
+						</th>
 					</tr>
 				</thead>
-					<tr class="name-item-content">
-						<td>Розовый фильтр</td>
-						<td class="prices__image"><img src="img/yes.svg" alt="yes"></td>
-						<td class="prices__image"><img src="img/yes.svg" alt="yes"></td>
-						<td class="prices__image"><img src="img/yes.svg" alt="yes"></td>
-					</tr>
-					<tr class="name-item-content">
-						<td>Смайлики</td>
-						<td class="prices__image"><img src="img/no.svg" alt="no"></td>
-						<td class="prices__image"><img src="img/no.svg" alt="no"></td>
-						<td class="prices__image"><img src="img/yes.svg" alt="yes"></td>
-					</tr>
-					<tr class="name-item-content">
-						<td>Комментарии</td>
-						<td class="prices__image"><img src="img/no.svg" alt="no"></td>
-						<td class="prices__image"><img src="img/no.svg" alt="no"></td>
-						<td class="prices__image"><img src="img/no.svg" alt="no"></td>
-					</tr>
-				</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
+				<tr class="name-item-content">
+					<td>Розовый фильтр</td>
+					<td class="prices__image">
+						<img src="img/yes.svg" alt="yes"></td>
+					<td class="prices__image">
+						<img src="img/yes.svg" alt="yes"></td>
+					<td class="prices__image">
+						<img src="img/yes.svg" alt="yes"></td>
+				</tr>
+				<tr class="name-item-content">
+					<td>Смайлики</td>
+					<td class="prices__image">
+						<img src="img/no.svg" alt="no"></td>
+					<td class="prices__image">
+						<img src="img/no.svg" alt="no"></td>
+					<td class="prices__image">
+						<img src="img/yes.svg" alt="yes"></td>
+				</tr>
+				<tr class="name-item-content">
+					<td>Комментарии</td>
+					<td class="prices__image">
+						<img src="img/no.svg" alt="no"></td>
+					<td class="prices__image">
+						<img src="img/no.svg" alt="no"></td>
+					<td class="prices__image">
+						<img src="img/no.svg" alt="no"></td>
+				</tr>
+			</table>
 
 		</div>
-	</div>	
-	
+	</div>
+
 	<footer class="page-footer">
 		<div class="g-container">
 			<div class="page-footer__questions">
-				<h3 class="questions__item">Остались вопросы?<br>
-						Свяжитесь с нами!</h3>
-				
+				<h3 class="questions__item">
+					Остались вопросы?
+					<br>Свяжитесь с нами!</h3>
+
 			</div>
-			<div class="page-footer__contacts"><!--flexbox container-->
+			<div class="page-footer__contacts">
+				<!--flexbox container-->
 				<div class="page-footer__item">
 					<p class="page-footer__title">Звоните:</p>
 					<p class="page-footer__text">8 (800) 1000 900</p>
 				</div>
 				<div class="page-footer__item">
 					<p class="page-footer__title">Пишите:</p>
-					<p class="page-footer__text"><a href="#">hello@pinkapp.ru</a></p>
+					<p class="page-footer__text">
+						<a href="#">hello@pinkapp.ru</a>
+					</p>
 				</div>
 				<div class="page-footer__item">
 					<p class="page-footer__title">Приезжайте в гости:</p>
-					<p class="page-footer__text">Санкт-Петербург,<br>
-						Невский проспект, д. 20</p>
+					<p class="page-footer__text">
+						Санкт-Петербург,
+						<br>Невский проспект, д. 20</p>
 				</div>
 			</div>
 
 			<div class="page-footer__map">
 				<img src="img/triangle.svg" alt="">
-				
+
 				<iframe class="page-footer__map__size" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.7462900539058!2d30.321096999999995!3d59.936352!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310f89dee259%3A0x35cdba9c7f3d2206!2z0J3QtdCy0YHQutC40Lkg0L_RgC4sIDIwLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1427799919728"></iframe>
 			</div>
-			
 
-
-
-			<div class="page-footer__link"> 
+			<div class="page-footer__link">
 				<div class="page-footer__logo">
-				<a href="#">
-					<picture>
-						<source media="(min-width: 700px) and (max-width: 1199px)" srcset="img/Pink-logo-footer-2@1x.png">
-						<source media="(min-width: 1200px)" srcset="img/Pink-logo-footer-3@1x.png">
+					<a href="#">
+						<picture>
+							<source media="(min-width: 700px) and (max-width: 1199px)" srcset="img/Pink-logo-footer-2@1x.png">
+							<source media="(min-width: 1200px)" srcset="img/Pink-logo-footer-3@1x.png">
 
-
-						<img src="img/Pink-logo-footer-2@1x.png" alt="">
-						
-					</picture>
-				</a>
+							<img src="img/Pink-logo-footer-2@1x.png" alt=""></picture>
+					</a>
 				</div>
 				<div class="page-footer__social">
-					<a class="page-footer__social__item" href="#"><img src="img/twitter.svg" alt=""></a>
-					<a class="page-footer__social__item" href="#"><img src="img/facebook.svg" alt=""></a>
-					<a class="page-footer__social__item" href="#"><img src="img/youtube.svg" alt=""></a>
+					<a class="page-footer__social__item" href="#">
+						<img src="img/twitter.svg" alt=""></a>
+					<a class="page-footer__social__item" href="#">
+						<img src="img/facebook.svg" alt=""></a>
+					<a class="page-footer__social__item" href="#">
+						<img src="img/youtube.svg" alt=""></a>
 				</div>
 				<div class="page-footer__copyright">
-				
-					<span class="page-footer__style">Website by</span><a href="">
-					<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="25.988px" height="29.922px" viewBox="0 0 25.988 29.922" enable-background="new 0 0 25.988 29.922" xml:space="preserve">
-<path fill="#d32c55"      d="M0,0h25.988v29.922l-12.994-4.811L0,29.922V0z M20.154,17.895c-0.241,0-0.509-0.006-0.801-0.018
-	c-0.293-0.014-0.508-0.051-0.645-0.116c-0.225-0.103-0.391-0.26-0.5-0.469c-0.107-0.21-0.162-0.492-0.162-0.854
-	c0-0.394,0.018-1.211,0.055-2.457c0.035-1.244,0.054-2.319,0.054-3.226c0-0.858-0.146-1.556-0.439-2.088
-	c-0.294-0.535-0.688-0.942-1.186-1.223c-0.522-0.289-1.108-0.481-1.758-0.572c-0.65-0.093-1.365-0.139-2.143-0.139
-	c-0.562,0-1.172,0.067-1.83,0.199c-0.659,0.132-1.24,0.318-1.746,0.56C8.54,7.725,8.104,8.02,7.747,8.377
-	C7.39,8.734,7.211,9.137,7.211,9.586c0,0.521,0.173,0.946,0.519,1.271c0.346,0.323,0.857,0.486,1.533,0.486
-	c0.476,0,0.827-0.043,1.057-0.132c0.229-0.089,0.437-0.213,0.622-0.374c0.138-0.12,0.242-0.283,0.314-0.487
-	c0.072-0.205,0.109-0.375,0.109-0.511c0-0.306-0.057-0.622-0.169-0.952c-0.113-0.329-0.181-0.573-0.206-0.734
-	c0.145-0.104,0.335-0.207,0.572-0.308c0.237-0.101,0.533-0.151,0.886-0.151c0.393,0,0.71,0.089,0.952,0.265
-	c0.241,0.177,0.417,0.393,0.53,0.651c0.104,0.225,0.172,0.501,0.205,0.831c0.032,0.327,0.048,0.593,0.048,0.794v1.155
-	c-0.467,0.224-1.207,0.48-2.22,0.767c-1.013,0.285-1.881,0.56-2.604,0.826c-0.378,0.143-0.726,0.3-1.043,0.471
-	c-0.317,0.169-0.597,0.38-0.838,0.639c-0.265,0.281-0.47,0.605-0.615,0.969c-0.145,0.366-0.217,0.811-0.217,1.333
-	c0,0.909,0.329,1.637,0.989,2.189c0.658,0.551,1.455,0.825,2.388,0.825c0.627,0,1.115-0.044,1.465-0.132
-	c0.35-0.089,0.714-0.223,1.091-0.396c0.29-0.138,0.561-0.303,0.814-0.494c0.253-0.193,0.517-0.426,0.791-0.699h0.072
-	c0.168,0.546,0.484,0.965,0.949,1.259c0.465,0.293,1.19,0.438,2.176,0.438c0.536,0,1.045-0.064,1.525-0.192s0.896-0.269,1.25-0.421
-	V17.895z M14.133,16.593c-0.217,0.265-0.468,0.487-0.754,0.668c-0.286,0.183-0.65,0.271-1.094,0.271
-	c-0.419,0-0.771-0.139-1.057-0.42c-0.286-0.282-0.429-0.738-0.429-1.364c0-0.475,0.083-0.887,0.253-1.238
-	c0.169-0.349,0.403-0.638,0.701-0.862c0.282-0.217,0.644-0.424,1.087-0.622c0.443-0.197,0.89-0.372,1.342-0.525L14.133,16.593z"/>
-</svg>
-					<!--<img src="img/glukhanko.svg" alt="">-->
-					</a>
+
+					<span class="page-footer__style">Website by</span>
+					<a href="">
+						<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+width="25.988px" height="29.922px" viewBox="0 0 25.988 29.922" enable-background="new 0 0 25.988 29.922" xml:space="preserve">
+							<path fill="#d32c55"      d="M0,0h25.988v29.922l-12.994-4.811L0,29.922V0z M20.154,17.895c-0.241,0-0.509-0.006-0.801-0.018
+c-0.293-0.014-0.508-0.051-0.645-0.116c-0.225-0.103-0.391-0.26-0.5-0.469c-0.107-0.21-0.162-0.492-0.162-0.854
+c0-0.394,0.018-1.211,0.055-2.457c0.035-1.244,0.054-2.319,0.054-3.226c0-0.858-0.146-1.556-0.439-2.088
+c-0.294-0.535-0.688-0.942-1.186-1.223c-0.522-0.289-1.108-0.481-1.758-0.572c-0.65-0.093-1.365-0.139-2.143-0.139
+c-0.562,0-1.172,0.067-1.83,0.199c-0.659,0.132-1.24,0.318-1.746,0.56C8.54,7.725,8.104,8.02,7.747,8.377
+C7.39,8.734,7.211,9.137,7.211,9.586c0,0.521,0.173,0.946,0.519,1.271c0.346,0.323,0.857,0.486,1.533,0.486
+c0.476,0,0.827-0.043,1.057-0.132c0.229-0.089,0.437-0.213,0.622-0.374c0.138-0.12,0.242-0.283,0.314-0.487
+c0.072-0.205,0.109-0.375,0.109-0.511c0-0.306-0.057-0.622-0.169-0.952c-0.113-0.329-0.181-0.573-0.206-0.734
+c0.145-0.104,0.335-0.207,0.572-0.308c0.237-0.101,0.533-0.151,0.886-0.151c0.393,0,0.71,0.089,0.952,0.265
+c0.241,0.177,0.417,0.393,0.53,0.651c0.104,0.225,0.172,0.501,0.205,0.831c0.032,0.327,0.048,0.593,0.048,0.794v1.155
+c-0.467,0.224-1.207,0.48-2.22,0.767c-1.013,0.285-1.881,0.56-2.604,0.826c-0.378,0.143-0.726,0.3-1.043,0.471
+c-0.317,0.169-0.597,0.38-0.838,0.639c-0.265,0.281-0.47,0.605-0.615,0.969c-0.145,0.366-0.217,0.811-0.217,1.333
+c0,0.909,0.329,1.637,0.989,2.189c0.658,0.551,1.455,0.825,2.388,0.825c0.627,0,1.115-0.044,1.465-0.132
+c0.35-0.089,0.714-0.223,1.091-0.396c0.29-0.138,0.561-0.303,0.814-0.494c0.253-0.193,0.517-0.426,0.791-0.699h0.072
+c0.168,0.546,0.484,0.965,0.949,1.259c0.465,0.293,1.19,0.438,2.176,0.438c0.536,0,1.045-0.064,1.525-0.192s0.896-0.269,1.25-0.421
+V17.895z M14.133,16.593c-0.217,0.265-0.468,0.487-0.754,0.668c-0.286,0.183-0.65,0.271-1.094,0.271
+c-0.419,0-0.771-0.139-1.057-0.42c-0.286-0.282-0.429-0.738-0.429-1.364c0-0.475,0.083-0.887,0.253-1.238
+c0.169-0.349,0.403-0.638,0.701-0.862c0.282-0.217,0.644-0.424,1.087-0.622c0.443-0.197,0.89-0.372,1.342-0.525L14.133,16.593z"/>
+						</svg>
+						<!--<img src="img/glukhanko.svg" alt="">--></a>
 					<span class="page-footer__style">for</span>
 					<a href="">
-					<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="26.096px" height="33.803px" viewBox="0 0 26.096 33.803" enable-background="new 0 0 26.096 33.803" xml:space="preserve">
-<g>
-	<path  fill="#d32c55"              d="M13.047,0L0,1.456v24.475l13.047,7.835v0.037l13.049-7.872V1.557L13.047,0z M24.037,24.745l-10.989,6.622v-7.385
-		l-6.369-2.858v-0.021l6.373-2.816v-0.02h0.001v0.011l6.366,2.814v-0.006l0.01,0.006v-1.234l-6.366-2.813l-0.003,0.003l-0.007-0.003
-		v0.011h-0.001v-0.003L6.679,19.87v-1.235l0,0l5.848-2.584l-1.385-0.622l-4.463,1.973v-1.234l3.077-1.36l-1.385-0.622l-1.692,0.748
-		v-1.234l0.306-0.135l-3.73-1.674l9.793-4.248V2.084l10.989,1.321V24.745z"/>
-	<polygon points="19.428,17.389 14.958,15.414 13.57,16.035 19.428,18.624 	"/>
-	<polygon points="19.428,14.921 17.734,14.172 16.346,14.793 19.428,16.155 	"/>
-</g>
-</svg>
-					<!--<img src="img/htmlacademy.svg" alt="">-->
-					</a>
+						<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+width="26.096px" height="33.803px" viewBox="0 0 26.096 33.803" enable-background="new 0 0 26.096 33.803" xml:space="preserve">
+							<g>
+								<path  fill="#d32c55"              d="M13.047,0L0,1.456v24.475l13.047,7.835v0.037l13.049-7.872V1.557L13.047,0z M24.037,24.745l-10.989,6.622v-7.385
+l-6.369-2.858v-0.021l6.373-2.816v-0.02h0.001v0.011l6.366,2.814v-0.006l0.01,0.006v-1.234l-6.366-2.813l-0.003,0.003l-0.007-0.003
+v0.011h-0.001v-0.003L6.679,19.87v-1.235l0,0l5.848-2.584l-1.385-0.622l-4.463,1.973v-1.234l3.077-1.36l-1.385-0.622l-1.692,0.748
+v-1.234l0.306-0.135l-3.73-1.674l9.793-4.248V2.084l10.989,1.321V24.745z"/>
+								<polygon points="19.428,17.389 14.958,15.414 13.57,16.035 19.428,18.624 	"/>
+								<polygon points="19.428,14.921 17.734,14.172 16.346,14.793 19.428,16.155 	"/>
+							</g>
+						</svg>
+						<!--<img src="img/htmlacademy.svg" alt="">--></a>
 
 				</div>
-			</div>	
+			</div>
 		</div>
 	</footer>
+	<script src="js/script.js"></script>
+	<!-- <script src="js/script.js"></script>-->
+	<script src="jquery.min.js"></script>
+	<script src="js/owl.carousel.js"></script>
 	
-  
-
-  <!-- <script src="js/script.js"></script> -->
 
 </body>
 </html>

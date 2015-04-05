@@ -1,7 +1,11 @@
 .effect {
 	display: none;/*Этот блок предназначен для других версий*/
 }
-
+.g-container {
+	content: "";
+	clear: both;
+	display: table;
+}
 @media (min-width: 700px) {
 	.effect {
 		display: block;//показываем для планшетной версии
@@ -23,7 +27,7 @@
 			border: 11px solid @effect-color;
 			border-radius: 50%;
 			color: @effect-color;
-			font-size: 104.6px;
+			font-size: 104px;
 			font-weight: @bold;
 			padding: 35px 32px;
 			margin-top: 0px;
@@ -70,8 +74,9 @@
 }
 @media (min-width: 1200px) {
 	.effect {
-		margin-top: 16px;
+		margin-top: 0;
 		margin-bottom: 119px;
+		padding-bottom: 67px;
 		background-color: #f2f2f2;
 		&__position {
 			width: 400px;
